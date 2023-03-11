@@ -14,7 +14,7 @@ class ProfessorRating:
     true_rating = 0 # from website scale
     homemade_rating = None
     sentiment_method = None
-    label = "" # e.g. "Hot" or "not hot" or "lukewarm"
+    label = "" # e.g. "Hot", "not hot" or "mid"
     name = "" # self-explanatory
     website_link = "ratemyprofessors.com" # direct link to this specific professor's page
     university = "University of Michigan" # which university this professor teaches for
@@ -65,6 +65,8 @@ def scrape(link: str) -> ProfessorRating:
     university = name_div.next_sibling.contents[1].next
 
 
+    #Load all the comments
+
     #Find comments
     comments = []
     comments_div = soup.find_all("div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
@@ -88,8 +90,8 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
             if word in negative_lexicon:
                 score = score - 1
             wc += 1
-    return round(score/wc * 200, 1)
-#should we add w
+    return round(((score+wc)/wc * 5) + 5, 1)
+
 def main():
     global positive_lexicon
     global negative_lexicon
