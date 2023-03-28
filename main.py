@@ -2,6 +2,10 @@ import bs4
 import requests
 import typing
 import string
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 # Hot or Not
 
 
@@ -48,6 +52,25 @@ def clean(comment: str) -> str:
     return comment.translate(str.maketrans('', '', string.punctuation))
 
 def scrape(link: str) -> ProfessorRating:
+    # Scrape the website, but this time with selenium so we can click the button
+    options = Options()
+    #options.add_argument('-headless')
+    driver = webdriver.Firefox(options=options)
+    driver.get(link)
+    #print(driver.page_source)
+    print(driver.title)
+
+    #close cookies reminder
+    #button = driver.find_element(By.TAG_NAME, 'button')
+    #button = driver.find_element(By.XPATH, "//button[@type='button']")
+    button = driver.find_element(By.CLASS_NAME, "gvGrz")
+    button.click()
+    true_rating = driver.find_element(By.CSS_SELECTOR, "div.RatingValue__Numerator-qw8sqy-2 liyUjw")
+    print(true_rating)
+    driver.close()
+
+
+def scrape_deprecated(link: str) -> ProfessorRating:
     # Scrape the ratemyprofessors website with the given link to find information about a professor
 
     # Get the page
@@ -106,10 +129,12 @@ def main():
         if link.lower() == "stop" or link.lower() == 'exit':
             break
         try:
-            professor = scrape(link)
-            #professor = scrape("https://www.ratemyprofessors.com/professor?tid=140940")
-        except:
+            #professor = scrape(link)
+            professor = scrape("https://www.ratemyprofessors.com/professor?tid=140940")
+            exit(1)
+        except Exception as e:
             print("Invalid link")
+            print(e)
         print("Evaluation methods:")
         print("1. Opinion Lexicons: This method solely uses the total" +
               "number of positive and negative words to try and determine "+
