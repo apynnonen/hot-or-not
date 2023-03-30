@@ -1,34 +1,47 @@
 import requests
 import bs4
 
-# get name
-name = input(
-    "Please insert the first and last name of the professor you are looking for:\n")
 
-# get University
-university = input(
-    "Please insert the university of the professor you are looking for:\n")
+def name_to_link():
+    # get name
+    name = input(
+        "Please insert the first and last name of the professor you are looking for or STOP if you wish to exit:\n")
+    if name.lower() == "stop" or name.lower() == 'exit':
+        return 1
 
-# name = "brian noble"
-# university = "university of michigan "
+    # get University
+    university = input(
+        "Please insert the university of the professor you are looking for:\n")
 
-# format google search
-search = name.replace(" ", "+") + "+" + university.replace(" ", "+")
-URL = 'https://www.google.com/search?q=rate+my+professors+' + search
+    # name = "brian noble"
+    # university = "university of michigan "
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+    # format google search
+    search = name.replace(" ", "+") + "+" + university.replace(" ", "+")
+    URL = 'https://www.google.com/search?q=rate+my+professors+' + search
 
-page = requests.get(URL, headers=headers).text
-soup = bs4.BeautifulSoup(page, 'html.parser')
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
-# find first result <a> tag
-link = soup.find("div", {"class": "egMi0 kCrYT"})
-link = link.find("a")
+    page = requests.get(URL, headers=headers).text
+    soup = bs4.BeautifulSoup(page, 'html.parser')
+    # find first result <a> tag
+    link = soup.find("div", {"class": "egMi0 kCrYT"})
+    link = link.find("a")
 
-# find professor tid
-temp = str(link).find("tid%") + 6
-temp2 = str(link).find("&amp", temp-6)
-tid = str(link)[temp:temp2]
+    # find professor tid
+    temp = str(link).find("tid%") + 6
+    temp2 = str(link).find("&amp", temp-6)
+    if temp == 5:
+        temp = str(link).find("/professor/") + 11
+        temp2 = str(link).find("&amp", temp-11)
+        if temp == 10:
+            print("Invalid credentials!")
+            print("Try again")
+            return 1
+    tid = str(link)[temp:temp2]
+    link = "https://www.ratemyprofessors.com/professor?tid=" + str(tid)
+    return link, name.title(), university.title()
 
-print("https://www.ratemyprofessors.com/professor?tid=" + str(tid))
+
+# name_to_link()
