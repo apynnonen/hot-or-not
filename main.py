@@ -3,11 +3,13 @@ import requests
 import typing
 import string
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 # Hot or Not
 
+DEBUG = 0 # Set this to 1 to get more console output
 
 # Lexicons for opinion lexicon sentiment analysis
 positive_lexicon = []
@@ -53,21 +55,67 @@ def clean(comment: str) -> str:
 
 def scrape(link: str) -> ProfessorRating:
     # Scrape the website, but this time with selenium so we can click the button
-    options = Options()
-    #options.add_argument('-headless')
-    driver = webdriver.Firefox(options=options)
-    driver.get(link)
-    #print(driver.page_source)
-    print(driver.title)
 
-    #close cookies reminder
-    #button = driver.find_element(By.TAG_NAME, 'button')
-    #button = driver.find_element(By.XPATH, "//button[@type='button']")
+    # Initialize headless chromium webdriver
+    options = Options()
+    options.add_argument('-headless')
+    driver = webdriver.Chrome(options=options)
+
+    if DEBUG:
+        print("Successfully intialized Chrome headless webbrowser.")
+
+    # Get the ratemyprofessor page
+    driver.get(link)
+    if DEBUG:
+        print(f"Page title: {driver.title}")
+
+    # close cookies reminder
     button = driver.find_element(By.CLASS_NAME, "gvGrz")
+    if DEBUG:
+        print(f"Attempting to click button with text: {button.text}")
     button.click()
-    true_rating = driver.find_element(By.CSS_SELECTOR, "div.RatingValue__Numerator-qw8sqy-2 liyUjw")
-    print(true_rating)
+
+    # Get true rating, name, and university
+    true_rating = float(driver.find_element(By.CLASS_NAME, "liyUjw").text)
+    if DEBUG:
+        print(f"True rating scraped: {true_rating}")
+    name = driver.find_element(By.CLASS_NAME, "cfjPUG").text
+    if DEBUG:
+        print(f"Name scraped: {name}")
+    university_string = driver.find_element(By.CLASS_NAME, 'iLYGwn').text
+    if DEBUG:
+        print(f"University string scraped: {university_string}")
+    univeristy = university_string[university_string.find('at')+3:]
+        # Note: this is probably a really lazy way to do the university name, but I was having
+        # a lot of trouble with using xpath to find the actual <a> tag I needed for just the university name
+        # so I settled with getting the entire string (university_string) and just truncated it as needed
+
+
+    # Try and actually use selenium for what we need it for, clicking buttons for more comments
+    try:
+        while(True):
+            # Wait until either the "load more results" button exists, or 5 seconds have passed
+            moreCommentButton = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.CLASS_NAME, 'gjQZal'))
+            )
+            if DEBUG:
+                print(f"Attempting to click button with text: {moreCommentButton.text}")
+            moreCommentButton.click() # Click the button if it exists, if its not clickable, we're done so exit the loop
+    except:
+        if DEBUG:
+            print(f"hopefully got all the comments by now")
+
+    # In theory, all comments on page now, all with the class 'gRjWel', attempting to scrape them
+    comments = []
+    comments_div = driver.find_elements(By.CLASS_NAME, 'gRjWel')
+    for driver_element in comments_div:
+        comments.append(clean(driver_element.text))
     driver.close()
+
+    if DEBUG:
+        print(f"Webdriver successfully closed. Attempting to initialize professor and return from scrape function.")
+    professor = ProfessorRating(name, true_rating, link, univeristy, comments)
+    return professor
 
 
 def scrape_deprecated(link: str) -> ProfessorRating:
@@ -129,9 +177,8 @@ def main():
         if link.lower() == "stop" or link.lower() == 'exit':
             break
         try:
-            #professor = scrape(link)
-            professor = scrape("https://www.ratemyprofessors.com/professor?tid=140940")
-            exit(1)
+            professor = scrape(link)
+            #professor = scrape("http://www.ratemyprofessors.com/professor?tid=140940")
         except Exception as e:
             print("Invalid link")
             print(e)
