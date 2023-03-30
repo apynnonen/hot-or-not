@@ -84,7 +84,7 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     button.click()
 
     # Get true rating, name, and university
-    true_rating = float(driver.find_element(By.CLASS_NAME, "liyUjw").text)
+    true_rating = float(driver.find_element(By.CLASS_NAME, "liyUjw").text) * 2
     if DEBUG:
         print(f"True rating scraped: {true_rating}")
 
@@ -171,12 +171,23 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     wc = 0
     for comment in comment_list:
         for word in comment.split(" "):
+            stopword = True
             if word in positive_lexicon:
                 score = score + 1
+                stopword = False
             if word in negative_lexicon:
                 score = score - 1
-            wc += 1
-    return round(((score+wc)/wc * 5) + 5, 1)
+                stopword = False
+            if not stopword:
+                wc += 1
+    # Formula derived as follows. 
+    # First, look through all words in all comments.
+    # If a given word is in positive_lexicon, add one to the score
+    # If a given word is in negative_lexicon, subtract one from the score
+    # If a given word is in either, add one to the "non-stopword word count" (wc)
+    # Normalize the score by the wordcount, such that 0 positive words would return a score of 0
+    # and all positive words returns a score of 10
+    return round(((score)/wc) * 5 + 5, 1)
 
 
 def main():
@@ -196,18 +207,21 @@ def main():
         #     break
         try:
             link, name, university = name_to_link()
+            # link = "http://www.ratemyprofessors.com/professor?tid=140940"
+            # name = "Brian Noble"
+            # university = "University of Michigan"
         except:
             break
 
         try:
             professor = scrape(link, name, university)
-            # professor = scrape("http://www.ratemyprofessors.com/professor?tid=140940")
+            # professor = scrape("http://www.ratemyprofessors.com/professor?tid=140940", "Brian Noble", "University of Michigan")
         except Exception as e:
             print("Invalid link")
             print(e)
             break
         print("Evaluation methods:")
-        print("1. Opinion Lexicons: This method solely uses the total" +
+        print("1. Opinion Lexicons: This method solely uses the total " +
               "number of positive and negative words to try and determine " +
               "the overall sentiment of the comments to generate a rating score")
         print("2. [Under Construction]")
