@@ -173,12 +173,23 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     wc = 0
     for comment in comment_list:
         for word in comment.split(" "):
+            stopword = True
             if word in positive_lexicon:
                 score = score + 1
+                stopword = False
             if word in negative_lexicon:
                 score = score - 1
-            wc += 1
-    return round(((score+wc)/wc * 5) + 5, 1)
+                stopword = False
+            if not stopword:
+                wc += 1
+    # Formula derived as follows. 
+    # First, look through all words in all comments.
+    # If a given word is in positive_lexicon, add one to the score
+    # If a given word is in negative_lexicon, subtract one from the score
+    # If a given word is in either, add one to the "non-stopword word count" (wc)
+    # Normalize the score by the wordcount, such that 0 positive words would return a score of 0
+    # and all positive words returns a score of 10
+    return round(((score)/wc) * 5 + 5, 1)
 
 
 def call(x, y, z):
