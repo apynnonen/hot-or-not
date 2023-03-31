@@ -15,6 +15,8 @@ DEBUG = 0  # Set this to 1 to get more console output
 # Lexicons for opinion lexicon sentiment analysis
 positive_lexicon = []
 negative_lexicon = []
+professor_table = {}
+name_table = {}
 
 
 class ProfessorRating:
@@ -47,15 +49,16 @@ class ProfessorRating:
         return self.label
 
     def print_summary(self):
-        x = "Professor "+self.name+" is a professor at the "+self.university + \
-            " who has had comments written by " + \
-            str(len(self.comments))+" students.\n"
+        print("Professor "+self.name+" is a professor at the "+self.university +
+              " who has had comments written by "+str(len(self.comments))+" students.")
         if self.sentiment_method != None:
-            x += "Using the "+self.sentiment_method+" method, professor " + \
-                self.name+" has a rating of "+str(self.homemade_rating)+".\n"
-            x += "The true rating from ratemyprofessors is " +\
-                str(self.true_rating)+".\n"
-        return x
+            print("Using the "+self.sentiment_method+" method, professor " +
+                  self.name+" has a rating of "+str(self.homemade_rating)+".")
+            print("The true rating from ratemyprofessors is " +
+                  str(self.true_rating)+".")
+
+    def return_summary(self):
+        return f"Professor {self.name} is a professor at the {self.university} who has had comments written by {len(self.comments)} students. Using the {self.sentiment_method} method, professor {self.name} has a rating of {self.homemade_rating}. Ratemyprofessor gives this professor a score of {self.true_rating}."
 
 
 def clean(comment: str) -> str:
@@ -69,7 +72,10 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     # Initialize headless chromium webdriver
     options = Options()
     options.add_argument('-headless')
+    # options.add_argument("--incognito")
+    # options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome()
 
     if DEBUG:
         print("Successfully intialized Chrome headless webbrowser.")
@@ -86,7 +92,7 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     button.click()
 
     # Get true rating, name, and university
-    true_rating = float(driver.find_element(By.CLASS_NAME, "liyUjw").text)
+    true_rating = float(driver.find_element(By.CLASS_NAME, "liyUjw").text) * 2
     if DEBUG:
         print(f"True rating scraped: {true_rating}")
 
@@ -114,7 +120,7 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
                     f"Attempting to click button with text: {moreCommentButton.text}")
             # Click the button if it exists, if its not clickable, we're done so exit the loop
             moreCommentButton.click()
-    except:
+    except Exception as e:
         if DEBUG:
             print(f"hopefully got all the comments by now")
 
@@ -182,7 +188,7 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
                 stopword = False
             if not stopword:
                 wc += 1
-    # Formula derived as follows. 
+    # Formula derived as follows.
     # First, look through all words in all comments.
     # If a given word is in positive_lexicon, add one to the score
     # If a given word is in negative_lexicon, subtract one from the score
@@ -192,46 +198,80 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     return round(((score)/wc) * 5 + 5, 1)
 
 
-def call(x, y, z):
-    global positive_lexicon
-    global negative_lexicon
-    with open("negative-words.txt") as f:
-        for line in f:
-            negative_lexicon.append(line.strip())
-    with open("positive-words.txt") as f:
-        for line in f:
-            positive_lexicon.append(line.strip())
+def call(name: str, university: str, option: str):
+    option = int(option)
+    global name_table
+    # keep local name records including user typos
+    if (name+university) in name_table:
+        link, name, university = name_table[name+university]
+    else:
+        link, newname, newuniversity = name_to_link(name, university)
+        name_table[name+university] = (link, newname, newuniversity)
+        name = newname
+        university = newuniversity
 
-    # link = input(
-    #     "Enter the link of a professor you want to learn about, or STOP to exit: ")
-    # if link.lower() == "stop" or link.lower() == 'exit':
-    #     break
-    try:
-        link, name, university = name_to_link(x, y)
-    except:
-        return 1
+    # keep local professor records
+    if link in professor_table:
+        professor = professor_table[link]
+    else:
+        # scrape
+        try:
+            professor = scrape(link, name, university)
+            professor_table[link] = professor
+        except Exception as e:
+            raise Exception("Problem with scraping")
 
-    try:
-        professor = scrape(link, name, university)
-        # professor = scrape("http://www.ratemyprofessors.com/professor?tid=140940")
-    except Exception as e:
-        print("Invalid link")
-        print(e)
-        return 1
-    # print("Evaluation methods:")
-    # print("1. Opinion Lexicons: This method solely uses the total" +
-    #       "number of positive and negative words to try and determine " +
-    #       "the overall sentiment of the comments to generate a rating score")
-    # print("2. [Under Construction]")
-    # choice = int(input("Which method would you like (enter the number): "))
-    choice = int(z)
-    if choice == 1:
+    if option == 1:
+        # Opinion lexicon
         professor.homemade_rating = opinion_lexicon(professor.comments)
         professor.sentiment_method = "Opinion Lexicon"
+        return professor.return_summary()
     else:
-        print("Choice not valid")
-    return professor.print_summary()
+        return "You selected an option that wasn't implemented, sorry."
+
+
+def main():
+    while True:
+        # link = input(
+        #     "Enter the link of a professor you want to learn about, or STOP to exit: ")
+        # if link.lower() == "stop" or link.lower() == 'exit':
+        #     break
+        try:
+            link, name, university = name_to_link()
+            # link = "http://www.ratemyprofessors.com/professor?tid=140940"
+            # name = "Brian Noble"
+            # university = "University of Michigan"
+        except:
+            break
+
+        try:
+            professor = scrape(link, name, university)
+            # professor = scrape("http://www.ratemyprofessors.com/professor?tid=140940", "Brian Noble", "University of Michigan")
+        except Exception as e:
+            print("Invalid link")
+            print(e)
+            break
+        print("Evaluation methods:")
+        print("1. Opinion Lexicons: This method solely uses the total " +
+              "number of positive and negative words to try and determine " +
+              "the overall sentiment of the comments to generate a rating score")
+        print("2. [Under Construction]")
+        choice = int(input("Which method would you like (enter the number): "))
+        if choice == 1:
+            professor.homemade_rating = opinion_lexicon(professor.comments)
+            professor.sentiment_method = "Opinion Lexicon"
+        else:
+            print("Choice not valid")
+        professor.print_summary()
 
 
 if __name__ == "__main__":
-    call()
+    main()
+
+
+with open("negative-words.txt") as f:
+    for line in f:
+        negative_lexicon.append(line.strip())
+with open("positive-words.txt") as f:
+    for line in f:
+        positive_lexicon.append(line.strip())
