@@ -217,6 +217,8 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     return round(((score)/wc) * 5 + 5, 1)
 
 def vaderSentenceAnalysis(comment_list: typing.List[str]) -> float:
+    # This method uses Vader Sentiment Analysis to classify individual sentences, weighting each sentence equally
+    # This does give comments with more sentences in them greater impact on the score as a whole, which could be changed if we wanted TODO?
     score = 0
     total_sentences = 0
     analyzer = SentimentIntensityAnalyzer()
@@ -227,10 +229,10 @@ def vaderSentenceAnalysis(comment_list: typing.List[str]) -> float:
             vs = analyzer.polarity_scores(sentence)
             total_sentences+=1
             score += float(vs['compound'])
-    return round((score/total_sentences) * 5 + 1, 1)
+    return round((score/total_sentences) * 5 + 5, 1)
 
 def vaderCommentAnalysis(comment_list: typing.List[str]) ->float:
-    # This method uses Vader Sentiment Analysis to classify comments
+    # This method uses Vader Sentiment Analysis to classify whole comments
     score = 0
     total_sentences = 0
     analyzer = SentimentIntensityAnalyzer()
@@ -241,6 +243,7 @@ def vaderCommentAnalysis(comment_list: typing.List[str]) ->float:
 
 
 def call(name: str, university: str, option: str):
+    # This method is called by the website to actually determine a professor's rating.
     option = int(option)
     global name_table
     # keep local name records including user typos
@@ -251,18 +254,10 @@ def call(name: str, university: str, option: str):
         name_table[name+university] = (link, newname, newuniversity)
         name = newname
         university = newuniversity
+    return getData(link, name, university, option)
 
-    # keep local professor records
-    if link in professor_table:
-        professor = professor_table[link]
-    else:
-        # scrape
-        try:
-            professor = scrape(link, name, university)
-            professor_table[link] = professor
-        except Exception as e:
-            raise Exception("Problem with scraping")
-
+def getData(link, name, university, option):
+    professor = getProfessor(link, name, university)
     if option == 1:
         # Opinion lexicon
         professor.homemade_rating = opinion_lexicon(professor.comments)
@@ -277,9 +272,22 @@ def call(name: str, university: str, option: str):
         # VADER Setence Analysis, individually analyzing each sentence
         professor.homemade_rating = vaderSentenceAnalysis(professor.comments)
         professor.sentiment_method = "VADER Sentence Analysis"
+        return professor.return_summary()
     else:
         return "You selected an option that wasn't implemented, sorry."
 
+def getProfessor(link, name, university):
+    # keep local professor records
+    if link in professor_table:
+        professor = professor_table[link]
+    else:
+        # scrape
+        try:
+            professor = scrape(link, name, university)
+            professor_table[link] = professor
+        except Exception as e:
+            raise Exception("Problem with scraping")
+    return professor
 
 def main():
     while True:
