@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from nametolink import name_to_link
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 # Hot or Not
 
 DEBUG = 0  # Set this to 1 to get more console output
@@ -18,6 +19,31 @@ negative_lexicon = []
 professor_table = {}
 name_table = {}
 
+def get_label(score):
+    # TODO Someone make these better later, this is what I came up with on short notice
+    if score < 1:
+        return "Absolute Zero"
+    if score < 2:
+        return "Ice Cold"
+    if score < 3:
+        return "Cold"
+    if score < 4:
+        return "Chilly"
+    if score < 5:
+        return "Mid"
+    if score < 6:
+        return "Room Temp"
+    if score < 7:
+        return "Warm"
+    if score < 8:
+        return "Toasty"
+    if score < 9:
+        return "Flaming"
+    if score < 9.5:
+        return "Scalding"
+    if score < 10:
+        return "TOO DAMN HOT!"
+    
 
 class ProfessorRating:
     # Possible attributes, edit as needed
@@ -39,15 +65,6 @@ class ProfessorRating:
         self.university = university
         self.comments = comments
 
-    def true_rating(self):
-        return self.true_rating
-
-    def rating(self):
-        return self.rating
-
-    def how_hot(self):
-        return self.label
-
     def print_summary(self):
         print("Professor "+self.name+" is a professor at the "+self.university +
               " who has had comments written by "+str(len(self.comments))+" students.")
@@ -58,7 +75,8 @@ class ProfessorRating:
                   str(self.true_rating)+".")
 
     def return_summary(self):
-        return f"Professor {self.name} is a professor at the {self.university} who has had comments written by {len(self.comments)} students. Using the {self.sentiment_method} method, professor {self.name} has a rating of {self.homemade_rating}. Ratemyprofessor gives this professor a score of {self.true_rating}."
+        self.label = get_label(self.homemade_rating)
+        return f"Professor {self.name} is a professor at the {self.university} who has had comments written by {len(self.comments)} students. Using the {self.sentiment_method} method, professor {self.name} has a rating of {self.homemade_rating}, and has therefore earned the label {self.label}. Ratemyprofessor gives this professor a score of {self.true_rating}."
 
 
 def clean(comment: str) -> str:
@@ -128,7 +146,7 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     comments = []
     comments_div = driver.find_elements(By.CLASS_NAME, 'gRjWel')
     for driver_element in comments_div:
-        comments.append(clean(driver_element.text))
+        comments.append(driver_element.text)
     driver.close()
 
     if DEBUG:
@@ -164,7 +182,7 @@ def scrape_deprecated(link: str) -> ProfessorRating:
     comments_div = soup.find_all(
         "div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
     for comment in comments_div:
-        comments.append(clean(comment.next))
+        comments.append(comment.next)
 
     professor = ProfessorRating(
         (first_name+" "+last_name), true_rating, link, university, comments)
@@ -178,6 +196,7 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     score = 0
     wc = 0
     for comment in comment_list:
+        comment = clean(comment)
         for word in comment.split(" "):
             stopword = True
             if word in positive_lexicon:
@@ -196,6 +215,29 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     # Normalize the score by the wordcount, such that 0 positive words would return a score of 0
     # and all positive words returns a score of 10
     return round(((score)/wc) * 5 + 5, 1)
+
+def vaderSentenceAnalysis(comment_list: typing.List[str]) -> float:
+    score = 0
+    total_sentences = 0
+    analyzer = SentimentIntensityAnalyzer()
+    for comment in comment_list:
+        for sentence in comment.split("."):
+            if sentence.strip() == '':
+                continue
+            vs = analyzer.polarity_scores(sentence)
+            total_sentences+=1
+            score += float(vs['compound'])
+    return round((score/total_sentences) * 5 + 1, 1)
+
+def vaderCommentAnalysis(comment_list: typing.List[str]) ->float:
+    # This method uses Vader Sentiment Analysis to classify comments
+    score = 0
+    total_sentences = 0
+    analyzer = SentimentIntensityAnalyzer()
+    for comment in comment_list:
+        vs = analyzer.polarity_scores(comment)
+        score+= float(vs['compound'])
+    return round((score/len(comment_list)) * 5 + 5, 1)
 
 
 def call(name: str, university: str, option: str):
@@ -226,6 +268,15 @@ def call(name: str, university: str, option: str):
         professor.homemade_rating = opinion_lexicon(professor.comments)
         professor.sentiment_method = "Opinion Lexicon"
         return professor.return_summary()
+    elif option == 3:
+        # VADER Comment Analysis, reading the entire comment at once
+        professor.homemade_rating = vaderCommentAnalysis(professor.comments)
+        professor.sentiment_method = "VADER Comment Analysis"
+        return professor.return_summary()
+    elif option == 4:
+        # VADER Setence Analysis, individually analyzing each sentence
+        professor.homemade_rating = vaderSentenceAnalysis(professor.comments)
+        professor.sentiment_method = "VADER Sentence Analysis"
     else:
         return "You selected an option that wasn't implemented, sorry."
 
