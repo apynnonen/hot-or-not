@@ -25,7 +25,7 @@ button{
 .wrapper-class{
     position: relative;
     top: 40%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: justify;
+    text-align: center;
 }
