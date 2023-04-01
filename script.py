@@ -205,7 +205,11 @@ def call(name: str, university: str, option: str):
     if (name+university) in name_table:
         link, name, university = name_table[name+university]
     else:
-        link, newname, newuniversity = name_to_link(name, university)
+        try:
+            link, newname, newuniversity = name_to_link(name, university)
+        except ValueError as e:
+            return "Invalid Professor Credentials!"
+
         name_table[name+university] = (link, newname, newuniversity)
         name = newname
         university = newuniversity

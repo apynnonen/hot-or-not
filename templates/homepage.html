@@ -34,11 +34,14 @@
       href="{{ url_for('static', filename='css/index.css') }}"
     />
     <title>Hot or Not</title>
+
   </head>
   <body>
     <div id="container1">
       <h1 class="display1">Welcome to Hot or Not</h1>
       <br />
+      <br />
+      <h3 id="loading"></h3>      
       <form action="/" method="post">
         <input
           type="search"

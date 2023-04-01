@@ -38,6 +38,7 @@ def name_to_link(name, university):
         if temp == 10:
             print("Invalid credentials!")
             print("Try again")
+            raise ValueError
             return 1
     tid = str(link)[temp:temp2]
     link = "https://www.ratemyprofessors.com/professor?tid=" + str(tid)
