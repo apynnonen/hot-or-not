@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!--Custom Style-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+    <title>Hot or Not</title>
+  </head>
+  <body>
+    <div id="container1">
+      <h1 class="display1">Welcome to Hot or Not</h1>
+      <br />
+      <form action="/" method="post">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Enter your professor's first and last name"
+          id="namebox"
+        />
+        <br />
+        <br />
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Enter your university"
+          id="unibox"
+        />
+        <br />
+        <br />
+        <br />
+        <div class="wrapper-class">
+          <span>Choose one of the below:</span><br />
+          <input type="radio" id="radio1" value="1" name="sentiment_choice" />
+          <label for="radio1">Unweighted Opinion Lexicon</label>
+          <br />
+          <input type="radio" id="radio2" value="2" name="sentiment_choice" />
+          <label for="radio2">Weighted Opinion Lexicon</label>
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary" onclick="press()">
+        Calculate Rating
+      </button>
+      <br />
+      <br />
+      <br />
+      <!-- <div>
+        1. Opinion Lexicons: This method solely uses the total number of
+        positive and negative words to try and determine the overall sentiment
+        of the comments to generate a rating score.
+      </div>
+      <br />
+      <div>2. Under Construction</div>
+      <br />
+      <div>3. Under Construction</div> -->
+    </div>
+  </body>
+</html>

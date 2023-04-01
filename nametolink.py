@@ -2,16 +2,16 @@ import requests
 import bs4
 
 
-def name_to_link():
-    # get name
-    name = input(
-        "Please insert the first and last name of the professor you are looking for or STOP if you wish to exit:\n")
-    if name.lower() == "stop" or name.lower() == 'exit':
-        return 1
+def name_to_link(name, university):
+    # # get name
+    # name = input(
+    #     "Please insert the first and last name of the professor you are looking for or STOP if you wish to exit:\n")
+    # if name.lower() == "stop" or name.lower() == 'exit':
+    #     return 1
 
-    # get University
-    university = input(
-        "Please insert the university of the professor you are looking for:\n")
+    # # get University
+    # university = input(
+    #     "Please insert the university of the professor you are looking for:\n")
 
     # name = "brian noble"
     # university = "university of michigan "

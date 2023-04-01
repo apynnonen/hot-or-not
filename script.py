@@ -15,6 +15,8 @@ DEBUG = 0  # Set this to 1 to get more console output
 # Lexicons for opinion lexicon sentiment analysis
 positive_lexicon = []
 negative_lexicon = []
+professor_table = {}
+name_table = {}
 
 
 class ProfessorRating:
@@ -55,6 +57,9 @@ class ProfessorRating:
             print("The true rating from ratemyprofessors is " +
                   str(self.true_rating)+".")
 
+    def return_summary(self):
+        return f"Professor {self.name} is a professor at the {self.university} who has had comments written by {len(self.comments)} students. Using the {self.sentiment_method} method, professor {self.name} has a rating of {self.homemade_rating}. Ratemyprofessor gives this professor a score of {self.true_rating}."
+
 
 def clean(comment: str) -> str:
     # Clean up a comment so that its ready for text processing TODO
@@ -67,7 +72,10 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     # Initialize headless chromium webdriver
     options = Options()
     options.add_argument('-headless')
+    # options.add_argument("--incognito")
+    # options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome()
 
     if DEBUG:
         print("Successfully intialized Chrome headless webbrowser.")
@@ -112,7 +120,7 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
                     f"Attempting to click button with text: {moreCommentButton.text}")
             # Click the button if it exists, if its not clickable, we're done so exit the loop
             moreCommentButton.click()
-    except:
+    except Exception as e:
         if DEBUG:
             print(f"hopefully got all the comments by now")
 
@@ -180,7 +188,7 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
                 stopword = False
             if not stopword:
                 wc += 1
-    # Formula derived as follows. 
+    # Formula derived as follows.
     # First, look through all words in all comments.
     # If a given word is in positive_lexicon, add one to the score
     # If a given word is in negative_lexicon, subtract one from the score
@@ -190,17 +198,40 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     return round(((score)/wc) * 5 + 5, 1)
 
 
-def main():
-    global positive_lexicon
-    global negative_lexicon
-    with open("negative-words.txt") as f:
-        for line in f:
-            negative_lexicon.append(line.strip())
-    with open("positive-words.txt") as f:
-        for line in f:
-            positive_lexicon.append(line.strip())
-    while True:
+def call(name: str, university: str, option: str):
+    option = int(option)
+    global name_table
+    # keep local name records including user typos
+    if (name+university) in name_table:
+        link, name, university = name_table[name+university]
+    else:
+        link, newname, newuniversity = name_to_link(name, university)
+        name_table[name+university] = (link, newname, newuniversity)
+        name = newname
+        university = newuniversity
 
+    # keep local professor records
+    if link in professor_table:
+        professor = professor_table[link]
+    else:
+        # scrape
+        try:
+            professor = scrape(link, name, university)
+            professor_table[link] = professor
+        except Exception as e:
+            raise Exception("Problem with scraping")
+
+    if option == 1:
+        # Opinion lexicon
+        professor.homemade_rating = opinion_lexicon(professor.comments)
+        professor.sentiment_method = "Opinion Lexicon"
+        return professor.return_summary()
+    else:
+        return "You selected an option that wasn't implemented, sorry."
+
+
+def main():
+    while True:
         # link = input(
         #     "Enter the link of a professor you want to learn about, or STOP to exit: ")
         # if link.lower() == "stop" or link.lower() == 'exit':
@@ -236,3 +267,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+with open("negative-words.txt") as f:
+    for line in f:
+        negative_lexicon.append(line.strip())
+with open("positive-words.txt") as f:
+    for line in f:
+        positive_lexicon.append(line.strip())
