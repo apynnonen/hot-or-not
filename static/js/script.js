@@ -1,4 +1,6 @@
 async function press(id){
+    $(".btn-primary").removeClass("btn-primary");
+    $(".btn").addClass("btn-light");
     var name = $("#namebox").val();
     var uni = $("#unibox").val();
     var op = 0;
@@ -30,5 +32,7 @@ async function press(id){
         }).then((res)=>{ ans = res['answer'] });
         alert(ans);
     }
+    $(".btn").removeClass("btn-light");
+    $(".btn").addClass("btn-primary");
     
 }
