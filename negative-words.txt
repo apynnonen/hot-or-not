@@ -2,15 +2,15 @@
 2-faces
 abnormal
 abolish
-abominable
+abominable 3
 abominably
 abominate
-abomination
+abomination 3
 abort
 aborted
 aborts
 abrade
-abrasive
+abrasive 2
 abrupt
 abruptly
 abscond
@@ -21,14 +21,14 @@ absurd
 absurdity
 absurdly
 absurdness
-abuse
-abused
-abuses
-abusive
-abysmal
-abysmally
+abuse 3
+abused 3
+abuses 3
+abusive 3
+abysmal 2
+abysmally 2
 abyss
-accidental
+accidental 0.5
 accost
 accursed
 accusation
@@ -66,20 +66,20 @@ adulterate
 adulterated
 adulteration
 adulterier
-adversarial
-adversary
-adverse
+adversarial 1.5
+adversary 1.5
+adverse 1.5
 adversity
 afflict
 affliction
 afflictive
 affront
 afraid
-aggravate
-aggravating
+aggravate 2
+aggravating 2
 aggravation
-aggression
-aggressive
+aggression 3
+aggressive 3
 aggressiveness
 aggressor
 aggrieve
@@ -87,10 +87,10 @@ aggrieved
 aggrivation
 aghast
 agonies
-agonize
-agonizing
-agonizingly
-agony
+agonize 2
+agonizing 2
+agonizingly 2
+agony 2
 aground
 ail
 ailing
@@ -123,27 +123,27 @@ anarchist
 anarchistic
 anarchy
 anemic
-anger
-angrily
-angriness
-angry
+anger 2
+angrily 2
+angriness 2
+angry 2
 anguish
 animosity
-annihilate
-annihilation
-annoy
+annihilate 3
+annihilation 3
+annoy 0.5
 annoyance
 annoyances
-annoyed
-annoying
-annoyingly
+annoyed 0.5
+annoying 0.5
+annoyingly 0.5
 annoys
 anomalous
 anomaly
 antagonism
-antagonist
-antagonistic
-antagonize
+antagonist 2
+antagonistic 2
+antagonize 2
 anti-
 anti-american
 anti-israeli
@@ -158,26 +158,26 @@ antiquated
 antithetical
 anxieties
 anxiety
-anxious
-anxiously
-anxiousness
-apathetic
-apathetically
-apathy
+anxious 0.5
+anxiously 0.5
+anxiousness 0.5
+apathetic 0.5
+apathetically 0.5
+apathy 0.5
 apocalypse
 apocalyptic
 apologist
 apologists
 appal
-appall
-appalled
-appalling
-appallingly
-apprehension
-apprehensions
-apprehensive
-apprehensively
-arbitrary
+appall 2
+appalled 2
+appalling 2
+appallingly 2
+apprehension 0.5
+apprehensions 0.5
+apprehensive 0.5
+apprehensively 0.5
+arbitrary 0.5
 arcane
 archaic
 arduous
@@ -197,13 +197,13 @@ aspersions
 assail
 assassin
 assassinate
-assault
+assault 3
 assult
 astray
 asunder
-atrocious
-atrocities
-atrocity
+atrocious 2
+atrocities 2
+atrocity 2
 atrophy
 attack
 attacks
@@ -224,8 +224,8 @@ avenge
 averse
 aversion
 aweful
-awful
-awfully
+awful 2
+awfully 2
 awfulness
 awkward
 awkwardness
@@ -243,7 +243,7 @@ backward
 backwardness
 backwood
 backwoods
-bad
+bad 0.75
 badly
 baffle
 baffled
@@ -309,14 +309,14 @@ beset
 besiege
 besmirch
 bestial
-betray
-betrayal
-betrayals
-betrayer
-betraying
-betrays
+betray 2
+betrayal 2
+betrayals 2
+betrayer 2
+betraying 2
+betrays 2
 bewail
-beware
+beware 0.5
 bewilder
 bewildered
 bewildering
@@ -345,7 +345,7 @@ blackmail
 blah
 blame
 blameworthy
-bland
+bland 0.5
 blandish
 blaspheme
 blasphemous
@@ -398,11 +398,11 @@ bombardment
 bombastic
 bondage
 bonkers
-bore
-bored
-boredom
-bores
-boring
+bore 0.5
+bored 0.5
+boredom 0.5
+bores 0.5
+boring 0.5
 botch
 bother
 bothered
@@ -413,7 +413,7 @@ bowdlerize
 boycott
 braggart
 bragger
-brainless
+brainless 2
 brainwash
 brash
 brashly
@@ -446,13 +446,13 @@ bruised
 bruises
 bruising
 brusque
-brutal
-brutalising
-brutalities
-brutality
-brutalize
-brutalizing
-brutally
+brutal 2
+brutalising 2
+brutalities 2
+brutality 2
+brutalize 2
+brutalizing 2
+brutally 2
 brute
 brutish
 bs
@@ -468,11 +468,11 @@ bulkyness
 bull****
 bull----
 bullies
-bullshit
+bullshit 2
 bullshyt
-bully
-bullying
-bullyingly
+bully 2
+bullying 2
+bullyingly 2
 bum
 bump
 bumped
@@ -501,8 +501,8 @@ byzantine
 cackle
 calamities
 calamitous
-calamitously
-calamity
+calamitously 2
+calamity 2
 callous
 calumniate
 calumniation
@@ -519,7 +519,7 @@ capricious
 capriciously
 capriciousness
 capsize
-careless
+careless 0.75
 carelessness
 caricature
 carnage
@@ -529,24 +529,24 @@ cash-strapped
 castigate
 castrated
 casualty
-cataclysm
-cataclysmal
-cataclysmic
-cataclysmically
+cataclysm 3
+cataclysmal 3
+cataclysmic 3
+cataclysmically 3
 catastrophe
 catastrophes
-catastrophic
-catastrophically
-catastrophies
+catastrophic 3
+catastrophically 3
+catastrophies 3
 caustic
 caustically
-cautionary
+cautionary 0.5
 cave
 censure
 chafe
 chaff
 chagrin
-challenging
+challenging 0.5
 chaos
 chaotic
 chasten
@@ -567,7 +567,7 @@ cheerless
 cheesy
 chide
 childish
-chill
+chill -1
 chilly
 chintzy
 choke
@@ -623,12 +623,12 @@ compulsion
 compulsive
 concede
 conceded
-conceit
-conceited
+conceit 1.5
+conceited 1.5
 concen
 concens
-concern
-concerned
+concern 0.75
+concerned 0.75
 concerns
 concession
 concessions
@@ -654,7 +654,7 @@ confounded
 confounding
 confront
 confrontation
-confrontational
+confrontational 2
 confuse
 confused
 confuses
@@ -680,10 +680,10 @@ contaminated
 contaminates
 contaminating
 contamination
-contempt
-contemptible
-contemptuous
-contemptuously
+contempt 2
+contemptible 2
+contemptuous 2
+contemptuously 2
 contend
 contention
 contentious
@@ -727,7 +727,7 @@ crafty
 cramp
 cramped
 cramping
-cranky
+cranky 0.75
 crap
 crappy
 craps
@@ -821,8 +821,8 @@ damned
 damning
 damper
 danger
-dangerous
-dangerousness
+dangerous 2
+dangerousness 2
 dark
 darken
 darkened
@@ -908,8 +908,8 @@ degradation
 degrade
 degrading
 degradingly
-dehumanization
-dehumanize
+dehumanization 2
+dehumanize 2
 deign
 deject
 dejected
@@ -929,17 +929,17 @@ deluge
 delusion
 delusional
 delusions
-demean
-demeaning
+demean 2
+demeaning 2
 demise
 demolish
 demolisher
 demon
 demonic
-demonize
-demonized
-demonizes
-demonizing
+demonize 3
+demonized 3
+demonizes 3
+demonizing 3
 demoralize
 demoralizing
 demoralizingly
@@ -958,9 +958,9 @@ denunciations
 deny
 denying
 deplete
-deplorable
-deplorably
-deplore
+deplorable 3
+deplorably 3
+deplore 3
 deploring
 deploringly
 deprave
@@ -980,7 +980,7 @@ derision
 derisive
 derisively
 derisiveness
-derogatory
+derogatory 3
 desecrate
 desert
 desertion
@@ -996,10 +996,10 @@ despairingly
 desperate
 desperately
 desperation
-despicable
-despicably
-despise
-despised
+despicable 1.5
+despicably 1.5
+despise 1.5
+despised 1.5
 despoil
 despoiler
 despondence
@@ -1037,7 +1037,7 @@ detracts
 detriment
 detrimental
 devastate
-devastated
+devastated 2
 devastates
 devastating
 devastatingly
@@ -1053,11 +1053,11 @@ devious
 deviously
 deviousness
 devoid
-diabolic
-diabolical
-diabolically
+diabolic 4
+diabolical 3
+diabolically 4
 diametrically
-diappointed
+diappointed 0.5
 diatribe
 diatribes
 dick
@@ -1107,14 +1107,14 @@ disagreement
 disagrees
 disallow
 disapointed
-disapointing
-disapointment
-disappoint
-disappointed
-disappointing
-disappointingly
-disappointment
-disappointments
+disapointing 0.5
+disapointment 0.5
+disappoint 0.5
+disappointed 0.5
+disappointing 0.5
+disappointingly 0.5
+disappointment 0.5
+disappointments 0.5
 disappoints
 disapprobation
 disapproval
@@ -1124,8 +1124,8 @@ disarm
 disarray
 disaster
 disasterous
-disastrous
-disastrously
+disastrous 2
+disastrously 2
 disavow
 disavowal
 disbelief
@@ -1163,9 +1163,9 @@ discourteously
 discoutinous
 discredit
 discrepant
-discriminate
-discrimination
-discriminatory
+discriminate 2 
+discrimination 2
+discriminatory 2
 disdain
 disdained
 disdainful
@@ -1173,7 +1173,7 @@ disdainfully
 disfavor
 disgrace
 disgraced
-disgraceful
+disgraceful 3
 disgracefully
 disgruntle
 disgruntled
@@ -1185,8 +1185,8 @@ disgustfully
 disgusting
 disgustingly
 dishearten
-disheartening
-dishearteningly
+disheartening 0.5
+dishearteningly 0.5
 dishonest
 dishonestly
 dishonesty
@@ -1206,10 +1206,10 @@ disintegrated
 disintegrates
 disintegration
 disinterest
-disinterested
-dislike
-disliked
-dislikes
+disinterested 0.5
+dislike 0.5
+disliked 0.5
+dislikes 0.5
 disliking
 dislocated
 disloyal
@@ -1272,9 +1272,9 @@ disrupt
 disruption
 disruptive
 diss
-dissapointed
-dissappointed
-dissappointing
+dissapointed 0.5
+dissappointed 0.5
+dissappointing 0.5
 dissatisfaction
 dissatisfactory
 dissatisfied
@@ -1387,7 +1387,7 @@ drastically
 drawback
 drawbacks
 dread
-dreadful
+dreadful 2
 dreadfully
 dreadfulness
 dreary
@@ -1434,9 +1434,9 @@ effigy
 effrontery
 egocentric
 egomania
-egotism
-egotistical
-egotistically
+egotism 2
+egotistical 2
+egotistically 2
 egregious
 egregiously
 election-rigger
@@ -1468,7 +1468,7 @@ enjoin
 enmity
 enrage
 enraged
-enraging
+enraging 2
 enslave
 entangle
 entanglement
@@ -1517,8 +1517,8 @@ excessive
 excessively
 exclusion
 excoriate
-excruciating
-excruciatingly
+excruciating 2
+excruciatingly 2
 excuse
 excuses
 execrate
@@ -1616,11 +1616,11 @@ fatalistically
 fatally
 fatcat
 fatcats
-fateful
-fatefully
+fateful -1
+fatefully -1
 fathomless
-fatigue
-fatigued
+fatigue 0.75
+fatigued 0.75
 fatique
 fatty
 fatuity
@@ -1658,8 +1658,8 @@ fickle
 fiction
 fictional
 fictitious
-fidget
-fidgety
+fidget 0.5
+fidgety 0.5
 fiend
 fiendish
 fierce
@@ -1792,8 +1792,8 @@ frustrating
 frustratingly
 frustration
 frustrations
-fuck
-fucking
+fuck 2
+fucking 2
 fudge
 fugitive
 full-blown
@@ -1803,10 +1803,10 @@ fume
 fumes
 fundamentalism
 funky
-funnily
-funny
-furious
-furiously
+funnily -2
+funny -2
+furious 2
+furiously 2
 furor
 fury
 fuss
@@ -1836,7 +1836,7 @@ gaudy
 gawk
 gawky
 geezer
-genocide
+genocide 3
 get-rich
 ghastly
 ghetto
@@ -1852,7 +1852,7 @@ gimmicks
 gimmicky
 glare
 glaringly
-glib
+glib 0.75
 glibly
 glitch
 glitches
@@ -1882,12 +1882,12 @@ greasy
 greed
 greedy
 grief
-grievance
-grievances
+grievance 2
+grievances 2
 grieve
 grieving
-grievous
-grievously
+grievous 2
+grievously 2
 grim
 grimace
 grind
@@ -1895,11 +1895,11 @@ gripe
 gripes
 grisly
 gritty
-gross
-grossly
+gross 1.5
+grossly 1.5
 grotesque
-grouch
-grouchy
+grouch 0.75
+grouchy 0.75
 groundless
 grouse
 growl
@@ -1911,11 +1911,11 @@ gruesome
 gruesomely
 gruff
 grumble
-grumpier
+grumpier 0.75
 grumpiest
 grumpily
 grumpish
-grumpy
+grumpy 0.75
 guile
 guilt
 guiltily
@@ -1940,10 +1940,10 @@ hangs
 haphazard
 hapless
 harangue
-harass
-harassed
-harasses
-harassment
+harass 2
+harassed 2
+harasses 2
+harassment 2
 harboring
 harbors
 hard
@@ -1959,9 +1959,9 @@ hardliner
 hardliners
 hardship
 hardships
-harm
-harmed
-harmful
+harm 2
+harmed 2
+harmful 2
 harms
 harpy
 harridan
@@ -1976,16 +1976,16 @@ hassles
 haste
 hastily
 hasty
-hate
-hated
-hateful
-hatefully
-hatefulness
+hate 2
+hated 2
+hateful 2
+hatefully 2
+hatefulness 2
 hater
 haters
-hates
+hates 2
 hating
-hatred
+hatred 2
 haughtily
 haughty
 haunt
