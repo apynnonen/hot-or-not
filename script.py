@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from nametolink import name_to_link
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from naivebayes import primeGlobalFiles, trainNaiveBayes, testNaiveBayes
+from naivebayes import trainNaiveBayes, testNaiveBayes
 # Hot or Not
 
 DEBUG = 0  # Set this to 1 to get more console output
