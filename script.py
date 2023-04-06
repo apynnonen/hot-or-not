@@ -19,31 +19,32 @@ negative_lexicon = []
 professor_table = {}
 name_table = {}
 
+
 def get_label(score):
     # TODO Someone make these better later, this is what I came up with on short notice
     if score < 1:
-        return "Absolute Zero"
+        return "🤮🤮🤮"
     if score < 2:
-        return "Ice Cold"
+        return "🥶"
     if score < 3:
-        return "Cold"
+        return "🤧"
     if score < 4:
-        return "Chilly"
+        return "⛈"
     if score < 5:
         return "Mid"
     if score < 6:
-        return "Room Temp"
+        return "🌤"
     if score < 7:
-        return "Warm"
+        return "☀️"
     if score < 8:
-        return "Toasty"
+        return "☕️"
     if score < 9:
-        return "Flaming"
+        return "🥵"
     if score < 9.5:
-        return "Scalding"
+        return "🔥"
     if score < 10:
-        return "TOO DAMN HOT!"
-    
+        return "🔥🧯🚒"
+
 
 class ProfessorRating:
     # Possible attributes, edit as needed
@@ -66,17 +67,17 @@ class ProfessorRating:
         self.comments = comments
 
     def print_summary(self):
-        print("Professor "+self.name+" is a professor at the "+self.university +
-              " who has had comments written by "+str(len(self.comments))+" students.")
+        print("Professor "+self.name+" has comments written by " +
+              str(len(self.comments))+" students.")
         if self.sentiment_method != None:
-            print("Using the "+self.sentiment_method+" method, professor " +
-                  self.name+" has a rating of "+str(self.homemade_rating)+".")
-            print("The true rating from ratemyprofessors is " +
+            print(""+self.sentiment_method+" rating: " +
+                  str(self.homemade_rating)+".")
+            print("True rating from ratemyprofessors: " +
                   str(self.true_rating)+".")
 
     def return_summary(self):
         self.label = get_label(self.homemade_rating)
-        return f"Professor {self.name} is a professor at the {self.university} who has had comments written by {len(self.comments)} students. Using the {self.sentiment_method} method, professor {self.name} has a rating of {self.homemade_rating}, and has therefore earned the label {self.label}. Ratemyprofessor gives this professor a score of {self.true_rating}."
+        return f"Professor {self.name} has had comments written by {len(self.comments)} students.\n {self.sentiment_method} rating: {self.homemade_rating} {self.label}\n Ratemyprofessor gives this professor a score of {self.true_rating}."
 
 
 def clean(comment: str) -> str:
@@ -216,6 +217,7 @@ def opinion_lexicon(comment_list: typing.List[str]) -> float:
     # and all positive words returns a score of 10
     return round(((score)/wc) * 5 + 5, 1)
 
+
 def vaderSentenceAnalysis(comment_list: typing.List[str]) -> float:
     # This method uses Vader Sentiment Analysis to classify individual sentences, weighting each sentence equally
     # This does give comments with more sentences in them greater impact on the score as a whole, which could be changed if we wanted TODO?
@@ -227,18 +229,19 @@ def vaderSentenceAnalysis(comment_list: typing.List[str]) -> float:
             if sentence.strip() == '':
                 continue
             vs = analyzer.polarity_scores(sentence)
-            total_sentences+=1
+            total_sentences += 1
             score += float(vs['compound'])
     return round((score/total_sentences) * 5 + 5, 1)
 
-def vaderCommentAnalysis(comment_list: typing.List[str]) ->float:
+
+def vaderCommentAnalysis(comment_list: typing.List[str]) -> float:
     # This method uses Vader Sentiment Analysis to classify whole comments
     score = 0
     total_sentences = 0
     analyzer = SentimentIntensityAnalyzer()
     for comment in comment_list:
         vs = analyzer.polarity_scores(comment)
-        score+= float(vs['compound'])
+        score += float(vs['compound'])
     return round((score/len(comment_list)) * 5 + 5, 1)
 
 
@@ -260,6 +263,7 @@ def call(name: str, university: str, option: str):
         university = newuniversity
     return getData(link, name, university, option)
 
+
 def getData(link, name, university, option):
     professor = getProfessor(link, name, university)
     if option == 1:
@@ -280,6 +284,7 @@ def getData(link, name, university, option):
     else:
         return "You selected an option that wasn't implemented, sorry."
 
+
 def getProfessor(link, name, university):
     # keep local professor records
     if link in professor_table:
@@ -292,6 +297,7 @@ def getProfessor(link, name, university):
         except Exception as e:
             raise Exception("Problem with scraping")
     return professor
+
 
 def main():
     while True:
