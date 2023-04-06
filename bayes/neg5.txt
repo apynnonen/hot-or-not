@@ -1,1 +1,1 @@
-x
+Her way of teaching is very unclear and has holes, as she does not spend time explaining the terminology in variables and formulas, which is crucial in machine learning.
