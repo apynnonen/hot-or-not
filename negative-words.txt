@@ -2000,45 +2000,45 @@ hazy
 head-aches
 headache
 headaches
-heartbreaker
-heartbreaking
+heartbreaker 2
+heartbreaking 2
 heartbreakingly
-heartless
-heathen
-heavy-handed
+heartless 
+heathen 2
+heavy-handed 
 heavyhearted
 heck
 heckle
 heckled
 heckles
-hectic
+hectic 2
 hedge
 hedonistic
 heedless
-hefty
+hefty 2
 hegemonism
 hegemonistic
 hegemony
-heinous
-hell
-hell-bent
+heinous 3
+hell 3
+hell-bent 3
 hellion
 hells
-helpless
-helplessly
-helplessness
-heresy
-heretic
-heretical
-hesitant
-hestitant
-hideous
-hideously
-hideousness
-high-priced
-hiliarious
-hinder
-hindrance
+helpless 2.5
+helplessly 2.5
+helplessness 2.5
+heresy 3
+heretic 3
+heretical 3
+hesitant 1.5
+hestitant 1.5
+hideous 2.5
+hideously 2.5
+hideousness 2.5
+high-priced 
+hiliarious 0.5
+hinder 1.5
+hindrance 1.5
 hiss
 hissed
 hissing
@@ -2047,77 +2047,77 @@ hoard
 hoax
 hobble
 hogs
-hollow
+hollow 1.5
 hoodium
-hoodwink
+hoodwink 1.5
 hooligan
-hopeless
-hopelessly
-hopelessness
-horde
-horrendous
-horrendously
-horrible
-horrid
-horrific
-horrified
-horrifies
-horrify
-horrifying
-horrifys
-hostage
-hostile
-hostilities
-hostility
+hopeless 2.5
+hopelessly 2.5
+hopelessness 2.5
+horde 2
+horrendous 3
+horrendously 3
+horrible 3
+horrid 3
+horrific 3
+horrified 3
+horrifies 3
+horrify 3
+horrifying 3
+horrifys 3
+hostage 3
+hostile 3
+hostilities 3
+hostility 3
 hotbeds
-hothead
-hotheaded
+hothead 2
+hotheaded 2
 hothouse
-hubris
+hubris 
 huckster
 hum
 humid
-humiliate
-humiliating
-humiliation
-humming
+humiliate 2.5
+humiliating 2.5
+humiliation 2.5
+humming 0.5
 hung
-hurt
-hurted
-hurtful
-hurting
-hurts
-hustler
-hype
-hypocricy
-hypocrisy
-hypocrite
-hypocrites
-hypocritical
-hypocritically
-hysteria
-hysteric
-hysterical
-hysterically
-hysterics
-idiocies
-idiocy
-idiot
-idiotic
-idiotically
-idiots
-idle
+hurt 2
+hurted 2
+hurtful 2.5
+hurting 2
+hurts 2
+hustler 0.5
+hype 0.25
+hypocricy 3
+hypocrisy 3
+hypocrite 3
+hypocrites 3
+hypocritical 3
+hypocritically 3
+hysteria 
+hysteric 2
+hysterical 2
+hysterically 2
+hysterics 2
+idiocies 3
+idiocy 3
+idiot 3
+idiotic 3
+idiotically 3
+idiots 3
+idle 
 ignoble
 ignominious
 ignominiously
 ignominy
-ignorance
-ignorant
+ignorance 1.5
+ignorant 1.5
 ignore
-ill-advised
-ill-conceived
-ill-defined
-ill-designed
+ill-advised 1.5
+ill-conceived 1.5
+ill-defined 1.5
+ill-designed 1.5
 ill-fated
 ill-favored
 ill-formed
@@ -2129,44 +2129,44 @@ ill-treated
 ill-treatment
 ill-usage
 ill-used
-illegal
-illegally
-illegitimate
+illegal 3
+illegally 3
+illegitimate 2
 illicit
-illiterate
+illiterate 2
 illness
-illogic
-illogical
-illogically
+illogic 2
+illogical 2
+illogically 2
 illusion
 illusions
 illusory
 imaginary
 imbalance
-imbecile
+imbecile 3
 imbroglio
 immaterial
-immature
+immature 3
 imminence
 imminently
 immobilized
 immoderate
 immoderately
 immodest
-immoral
-immorality
-immorally
+immoral 3
+immorality 3
+immorally 3
 immovable
-impair
+impair 1.5
 impaired
 impasse
-impatience
-impatient
-impatiently
-impeach
-impedance
-impede
-impediment
+impatience 1.5
+impatient 1.5
+impatiently 1.5
+impeach 
+impedance 
+impede 1.5
+impediment 
 impending
 impenitent
 imperfect
@@ -2177,8 +2177,8 @@ imperialist
 imperil
 imperious
 imperiously
-impermissible
-impersonal
+impermissible 2
+impersonal 2
 impertinent
 impetuous
 impetuously
@@ -2186,13 +2186,13 @@ impiety
 impinge
 impious
 implacable
-implausible
+implausible 1.5
 implausibly
 implicate
 implication
 implode
-impolite
-impolitely
+impolite 2.5
+impolitely 2.5
 impolitic
 importunate
 importune
@@ -2200,13 +2200,13 @@ impose
 imposers
 imposing
 imposition
-impossible
-impossiblity
-impossibly
+impossible 2.5
+impossiblity 2.5
+impossibly 2.5
 impotent
 impoverish
 impoverished
-impractical
+impractical 2
 imprecate
 imprecise
 imprecisely
@@ -2216,7 +2216,7 @@ imprisonment
 improbability
 improbable
 improbably
-improper
+improper 2
 improperly
 impropriety
 imprudence
@@ -2231,28 +2231,28 @@ impunity
 impure
 impurity
 inability
-inaccuracies
-inaccuracy
-inaccurate
-inaccurately
+inaccuracies 2
+inaccuracy 2
+inaccurate 2
+inaccurately 2
 inaction
 inactive
-inadequacy
-inadequate
-inadequately
+inadequacy 2.5
+inadequate 2.5
+inadequately 2.5
 inadverent
 inadverently
 inadvisable
 inadvisably
 inane
 inanely
-inappropriate
-inappropriately
+inappropriate 3
+inappropriately 3
 inapt
 inaptitude
 inarticulate
 inattentive
-inaudible
+inaudible 1.5
 incapable
 incapably
 incautious
@@ -2266,42 +2266,42 @@ incivility
 inclement
 incognizant
 incoherence
-incoherent
-incoherently
+incoherent 2.5
+incoherently 2.5
 incommensurate
 incomparable
 incomparably
-incompatability
-incompatibility
-incompatible
-incompetence
-incompetent
-incompetently
-incomplete
+incompatability 2
+incompatibility 2
+incompatible 2
+incompetence 2.5
+incompetent 2.5
+incompetently 2.5
+incomplete 2.5
 incompliant
-incomprehensible
-incomprehension
-inconceivable
-inconceivably
+incomprehensible 2
+incomprehension 2
+inconceivable 1.5
+inconceivably 1.5
 incongruous
 incongruously
-inconsequent
-inconsequential
-inconsequentially
-inconsequently
-inconsiderate
-inconsiderately
-inconsistence
-inconsistencies
-inconsistency
-inconsistent
+inconsequent 1.5
+inconsequential 1.5
+inconsequentially 1.5
+inconsequently 1.5
+inconsiderate 2
+inconsiderately 2
+inconsistence 2
+inconsistencies 2
+inconsistency 2
+inconsistent 2
 inconsolable
 inconsolably
 inconstant
-inconvenience
+inconvenience 1.5
 inconveniently
-incorrect
-incorrectly
+incorrect 1.5
+incorrectly 1.5
 incorrigible
 incorrigibly
 incredulous
@@ -2314,7 +2314,7 @@ indecision
 indecisive
 indecisively
 indecorum
-indefensible
+indefensible 2
 indelicate
 indeterminable
 indeterminably
@@ -2334,45 +2334,45 @@ indiscriminate
 indiscriminately
 indiscriminating
 indistinguishable
-indoctrinate
-indoctrination
+indoctrinate 2.5
+indoctrination 2.5
 indolent
 indulge
-ineffective
-ineffectively
-ineffectiveness
+ineffective 2
+ineffectively 2
+ineffectiveness 2
 ineffectual
 ineffectually
 ineffectualness
 inefficacious
-inefficacy
-inefficiency
-inefficient
-inefficiently
+inefficacy 2
+inefficiency 2
+inefficient 2
+inefficiently 2
 inelegance
 inelegant
 ineligible
 ineloquent
 ineloquently
-inept
-ineptitude
-ineptly
+inept 2.5
+ineptitude 2.5
+ineptly 2.5
 inequalities
-inequality
-inequitable
-inequitably
-inequities
+inequality 2.5
+inequitable 2.5
+inequitably 2.5
+inequities 2.5
 inescapable
 inescapably
 inessential
 inevitable
 inevitably
-inexcusable
-inexcusably
+inexcusable 2.5
+inexcusably 2.5
 inexorable
 inexorably
-inexperience
-inexperienced
+inexperience 2.5
+inexperienced 2.5
 inexpert
 inexpertly
 inexpiable
@@ -2382,72 +2382,72 @@ inextricably
 infamous
 infamously
 infamy
-infected
-infection
-infections
-inferior
-inferiority
+infected 1.5
+infection 1.5
+infections 1.5
+inferior 1.5
+inferiority 1.5
 infernal
 infest
 infested
-infidel
-infidels
-infiltrator
-infiltrators
+infidel 3
+infidels 3
+infiltrator  2
+infiltrators 2
 infirm
 inflame
 inflammation
-inflammatory
+inflammatory 2.5
 inflammed
 inflated
 inflationary
 inflexible
 inflict
 infraction
-infringe
-infringement
-infringements
-infuriate
-infuriated
-infuriating
-infuriatingly
-inglorious
+infringe 1.5
+infringement 1.5
+infringements 1.5
+infuriate 2
+infuriated 2
+infuriating 2
+infuriatingly 2
+inglorious 2.
 ingrate
 ingratitude
-inhibit
-inhibition
+inhibit 2
+inhibition 2
 inhospitable
 inhospitality
 inhuman
-inhumane
-inhumanity
+inhumane 3
+inhumanity 3
 inimical
 inimically
 iniquitous
 iniquity
 injudicious
-injure
-injurious
-injury
-injustice
-injustices
+injure 3
+injurious 3
+injury 3
+injustice 3
+injustices 3
 innuendo
 inoperable
 inopportune
 inordinate
 inordinately
-insane
+insane 2
 insanely
 insanity
 insatiable
 insecure
 insecurity
 insensible
-insensitive
-insensitively
-insensitivity
-insidious
-insidiously
+insensitive 2
+insensitively 2
+insensitivity 2
+insidious 2.5
+insidiously 2.5
 insignificance
 insignificant
 insignificantly
@@ -2458,30 +2458,30 @@ insinuate
 insinuating
 insinuation
 insociable
-insolence
-insolent
-insolently
+insolence 2.5
+insolent 2.5
+insolently 2.5
 insolvent
 insouciance
 instability
 instable
-instigate
-instigator
-instigators
-insubordinate
+instigate 2
+instigator 2
+instigators 2
+insubordinate 2
 insubstantial
 insubstantially
-insufferable
-insufferably
-insufficiency
-insufficient
-insufficiently
+insufferable 2.5
+insufferably 2.5
+insufficiency 2.5
+insufficient 2.5
+insufficiently 2.5
 insular
-insult
-insulted
-insulting
-insultingly
-insults
+insult 2.5
+insulted 2.5
+insulting 2.5
+insultingly 2.5
+insults 2.5
 insupportable
 insupportably
 insurmountable
@@ -2489,7 +2489,7 @@ insurmountably
 insurrection
 intefere
 inteferes
-intense
+intense 1.5
 interfere
 interference
 interferes
@@ -2497,27 +2497,27 @@ intermittent
 interrupt
 interruption
 interruptions
-intimidate
-intimidating
-intimidatingly
-intimidation
-intolerable
-intolerablely
-intolerance
-intoxicate
+intimidate 1.5
+intimidating 1.5
+intimidatingly 1.5
+intimidation 1.5
+intolerable 2
+intolerablely 2
+intolerance 2
+intoxicate 2.5
 intractable
 intransigence
 intransigent
 intrude
 intrusion
-intrusive
+intrusive 2
 inundate
 inundated
-invader
-invalid
-invalidate
-invalidity
-invasive
+invader 2
+invalid 2
+invalidate 2
+invalidity 2
+invasive 2
 invective
 inveigle
 invidious
@@ -2527,52 +2527,52 @@ invisible
 involuntarily
 involuntary
 irascible
-irate
-irately
+irate 2.5
+irately 2.5
 ire
-irk
-irked
-irking
-irks
-irksome
-irksomely
-irksomeness
-irksomenesses
+irk 2
+irked 2
+irking 2
+irks 2
+irksome 2
+irksomely 2
+irksomeness 2
+irksomenesses 2
 ironic
 ironical
 ironically
 ironies
 irony
 irragularity
-irrational
+irrational 2
 irrationalities
 irrationality
-irrationally
+irrationally 2
 irrationals
 irreconcilable
 irrecoverable
 irrecoverableness
 irrecoverablenesses
 irrecoverably
-irredeemable
-irredeemably
+irredeemable 2.5
+irredeemably 2.5
 irreformable
 irregular
 irregularity
 irrelevance
 irrelevant
 irreparable
-irreplacible
+irreplacible 0.5
 irrepressible
 irresolute
 irresolvable
-irresponsible
-irresponsibly
-irretating
+irresponsible 2
+irresponsibly 2
+irretating 2
 irretrievable
 irreversible
-irritable
-irritably
+irritable 2
+irritably 2
 irritant
 irritate
 irritated
@@ -2582,8 +2582,8 @@ irritations
 isolate
 isolated
 isolation
-issue
-issues
+issue 1.5
+issues 1.5
 itch
 itching
 itchy
@@ -2603,14 +2603,14 @@ jeeringly
 jeers
 jeopardize
 jeopardy
-jerk
+jerk 2
 jerky
 jitter
 jitters
 jittery
 job-killing
-jobless
-joke
+jobless 2
+joke 1.5
 joker
 jolt
 judder
@@ -2624,11 +2624,11 @@ jutter
 jutters
 kaput
 kill
-killed
+killed 2
 killer
 killing
 killjoy
-kills
+kills 2
 knave
 knife
 knock
@@ -2641,7 +2641,7 @@ lacked
 lackey
 lackeys
 lacking
-lackluster
+lackluster 2
 lacks
 laconic
 lag
@@ -2669,8 +2669,8 @@ lapses
 lascivious
 last-ditch
 latency
-laughable
-laughably
+laughable 1.5
+laughably 1.5
 laughingstock
 lawbreaker
 lawbreaking
@@ -2678,7 +2678,7 @@ lawless
 lawlessness
 layoff
 layoff-happy
-lazy
+lazy 1.5
 leak
 leakage
 leakages
@@ -2698,28 +2698,28 @@ lengthy
 less-developed
 lesser-known
 letch
-lethal
+lethal 2
 lethargic
 lethargy
-lewd
-lewdly
-lewdness
+lewd 2.5
+lewdly 2.5
+lewdness 2.5
 liability
 liable
-liar
-liars
+liar 2
+liars 2
 licentious
 licentiously
 licentiousness
-lie
-lied
+lie 2
+lied 2
 lier
-lies
-life-threatening
-lifeless
-limit
-limitation
-limitations
+lies 2
+life-threatening 3
+lifeless 2.5
+limit 
+limitation 
+limitations 
 limited
 limits
 limp
@@ -2729,11 +2729,11 @@ little-known
 livid
 lividly
 loath
-loathe
-loathing
-loathly
-loathsome
-loathsomely
+loathe 2
+loathing 2
+loathly 2
+loathsome 2
+loathsomely 2
 lone
 loneliness
 lonely
@@ -2749,15 +2749,15 @@ loose
 loot
 lorn
 lose
-loser
-losers
-loses
-losing
-loss
-losses
-lost
-loud
-louder
+loser 3
+losers 3
+loses 2
+losing 2
+loss 2
+losses 2
+lost 2
+loud 
+louder 
 lousy
 loveless
 lovelorn
@@ -2769,16 +2769,16 @@ lugubrious
 lukewarm
 lull
 lumpy
-lunatic
-lunaticism
+lunatic 2.5
+lunaticism 2.5
 lurch
 lure
 lurid
 lurk
 lurking
-lying
+lying 2
 macabre
-mad
+mad 2
 madden
 maddening
 maddeningly
@@ -2793,13 +2793,13 @@ malaise
 malcontent
 malcontented
 maledict
-malevolence
-malevolent
-malevolently
-malice
-malicious
-maliciously
-maliciousness
+malevolence 2
+malevolent 2
+malevolently 2
+malice 2.5
+malicious 2.5
+maliciously 2.5
+maliciousness 2.5
 malign
 malignant
 malodorous
@@ -2809,40 +2809,40 @@ mangled
 mangles
 mangling
 mania
-maniac
+maniac 2
 maniacal
-manic
-manipulate
-manipulation
-manipulative
-manipulators
+manic 2
+manipulate 2
+manipulation 2
+manipulative 2
+manipulators 2
 mar
 marginal
 marginally
 martyrdom
 martyrdom-seeking
 mashed
-massacre
-massacres
+massacre 2
+massacres 2
 matte
 mawkish
 mawkishly
 mawkishness
 meager
-meaningless
+meaningless 2
 meanness
 measly
 meddle
 meddlesome
-mediocre
-mediocrity
-melancholy
-melodramatic
-melodramatically
-meltdown
+mediocre 2
+mediocrity 2
+melancholy 2
+melodramatic 2
+melodramatically 2
+meltdown 3
 menace
-menacing
-menacingly
+menacing 2.5
+menacingly 2.5
 mendacious
 mendacity
 menial
@@ -2853,11 +2853,11 @@ messed
 messes
 messing
 messy
-midget
+midget 2.5
 miff
 militancy
-mindless
-mindlessly
+mindless 2
+mindlessly 2
 mirage
 mire
 misalign
@@ -2872,21 +2872,21 @@ misbehavior
 miscalculate
 miscalculation
 miscellaneous
-mischief
-mischievous
-mischievously
+mischief 2
+mischievous 2
+mischievously 2
 misconception
 misconceptions
 miscreant
 miscreants
 misdirection
 miser
-miserable
+miserable 2.5
 miserableness
-miserably
+miserably 2.5
 miseries
 miserly
-misery
+misery 2.5
 misfit
 misfortune
 misgiving
@@ -2896,8 +2896,8 @@ misguide
 misguided
 mishandle
 mishap
-misinform
-misinformed
+misinform 2
+misinformed 2
 misinterpret
 misjudge
 misjudgment
@@ -2918,13 +2918,13 @@ missed
 misses
 misstatement
 mist
-mistake
-mistaken
-mistakenly
-mistakes
+mistake 2
+mistaken 2
+mistakenly 2
+mistakes 2
 mistified
 mistress
-mistrust
+mistrust 2
 mistrustful
 mistrustfully
 mists
@@ -2932,36 +2932,36 @@ misunderstand
 misunderstanding
 misunderstandings
 misunderstood
-misuse
+misuse 2
 moan
-mobster
+mobster 2.5
 mock
 mocked
-mockeries
-mockery
-mocking
-mockingly
-mocks
-molest
-molestation
+mockeries 2.5
+mockery 2.5
+mocking 2.5
+mockingly 2.5
+mocks 2.5
+molest 3
+molestation 3
 monotonous
 monotony
-monster
-monstrosities
-monstrosity
-monstrous
+monster 3
+monstrosities 3
+monstrosity 3
+monstrous 3
 monstrously
-moody
+moody 1.5
 moot
 mope
-morbid
-morbidly
+morbid 2
+morbidly 2
 mordant
 mordantly
 moribund
-moron
-moronic
-morons
+moron 3
+moronic 3
+morons 3
 mortification
 mortified
 mortify
@@ -2979,8 +2979,8 @@ mudslinging
 mulish
 multi-polarization
 mundane
-murder
-murderer
+murder 3
+murderer 3
 murderous
 murderously
 murky
@@ -2992,50 +2992,50 @@ mysteriously
 mystery
 mystify
 myth
-nag
+nag 
 nagging
-naive
+naive 2
 naively
 narrower
 nastily
 nastiness
-nasty
-naughty
-nauseate
-nauseates
-nauseating
-nauseatingly
+nasty 2.5
+naughty 2.5
+nauseate 2.5
+nauseates 2.5
+nauseating 2.5
+nauseatingly 2.5
 naÔve
 nebulous
 nebulously
 needless
 needlessly
 needy
-nefarious
-nefariously
+nefarious 2.5
+nefariously 2.5
 negate
 negation
 negative
 negatives
-negativity
+negativity 2
 neglect
 neglected
 negligence
-negligent
-nemesis
-nepotism
+negligent 2
+nemesis 2
+nepotism 2
 nervous
 nervously
 nervousness
 nettle
 nettlesome
-neurotic
+neurotic 2
 neurotically
 niggle
 niggles
-nightmare
-nightmarish
-nightmarishly
+nightmare 2.5
+nightmarish 2.5
+nightmarishly 2.5
 nitpick
 nitpicking
 noise
@@ -3064,18 +3064,18 @@ obliterated
 oblivious
 obnoxious
 obnoxiously
-obscene
-obscenely
+obscene 2.5
+obscenely 2.5
 obscenity
 obscure
 obscured
 obscures
 obscurity
 obsess
-obsessive
-obsessively
+obsessive 2
+obsessively 2
 obsessiveness
-obsolete
+obsolete 2
 obstacle
 obstinate
 obstinately
@@ -3085,7 +3085,7 @@ obstructing
 obstruction
 obstructs
 obtrusive
-obtuse
+obtuse 2
 occlude
 occluded
 occludes
@@ -3097,41 +3097,41 @@ oddities
 oddity
 oddly
 odor
-offence
-offend
-offender
-offending
-offenses
-offensive
-offensively
-offensiveness
+offence 2.5
+offend 2.5
+offender 2.5
+offending 3
+offenses 2.5
+offensive 3
+offensively 3
+offensiveness 3
 officious
-ominous
+ominous 2
 ominously
 omission
-omit
+omit 2
 one-sided
 onerous
 onerously
 onslaught
-opinionated
-opponent
-opportunistic
-oppose
-opposition
-oppositions
-oppress
-oppression
-oppressive
-oppressively
-oppressiveness
-oppressors
+opinionated 1.5
+opponent 2
+opportunistic 0.5
+oppose 2
+opposition 2
+oppositions 2
+oppress 2.5
+oppression 2.5
+oppressive 2.5
+oppressively 2.5
+oppressiveness 2.5
+oppressors 2.5
 ordeal
 orphan
 ostracize
 outbreak
-outburst
-outbursts
+outburst 2
+outbursts 2
 outcast
 outcry
 outlaw
@@ -3147,7 +3147,7 @@ over-acted
 over-awe
 over-balanced
 over-hyped
-over-priced
+over-priced 2.5
 over-valuation
 overact
 overacted
@@ -3157,7 +3157,7 @@ overbalanced
 overbearing
 overbearingly
 overblown
-overdo
+overdo 2
 overdone
 overdue
 overemphasize
@@ -3165,20 +3165,20 @@ overheat
 overkill
 overloaded
 overlook
-overpaid
-overpayed
+overpaid 2.5
+overpayed 2.5
 overplay
 overpower
-overpriced
+overpriced 2.5
 overrated
 overreach
 overrun
 overshadow
 oversight
 oversights
-oversimplification
-oversimplified
-oversimplify
+oversimplification 2
+oversimplified 2
+oversimplify 2
 oversize
 overstate
 overstated
@@ -3190,18 +3190,18 @@ overthrow
 overthrows
 overturn
 overweight
-overwhelm
-overwhelmed
-overwhelming
-overwhelmingly
-overwhelms
+overwhelm 2
+overwhelmed 2
+overwhelming 2
+overwhelmingly 2
+overwhelms 2
 overzealous
 overzealously
 overzelous
-pain
-painful
-painfull
-painfully
+pain 2.5
+painful 2.5
+painfull 2.5
+painfully 2.5
 pains
 pale
 pales
@@ -3220,20 +3220,20 @@ paradoxical
 paradoxically
 paralize
 paralyzed
-paranoia
-paranoid
-parasite
+paranoia 1.5
+paranoid 1.5
+parasite 1.5
 pariah
 parody
 partiality
 partisan
 partisans
 passe
-passive
+passive 0.5
 passiveness
-pathetic
-pathetically
-patronize
+pathetic 2.5
+pathetically 2.5
+patronize 2
 paucity
 pauper
 paupers
@@ -3246,22 +3246,22 @@ peeve
 peeved
 peevish
 peevishly
-penalize
-penalty
+penalize 2
+penalty 2
 perfidious
 perfidity
 perfunctory
-peril
-perilous
-perilously
-perish
+peril 2
+perilous 2
+perilously 2
+perish 2
 pernicious
 perplex
 perplexed
 perplexing
 perplexity
-persecute
-persecution
+persecute 2.5
+persecution 2.5
 pertinacious
 pertinaciously
 pertinacity
@@ -3272,21 +3272,21 @@ perverse
 perversely
 perversion
 perversity
-pervert
-perverted
-perverts
-pessimism
-pessimistic
-pessimistically
+pervert 3
+perverted 3
+perverts 3
+pessimism 2
+pessimistic 2
+pessimistically 2
 pest
 pestilent
-petrified
-petrify
+petrified 2
+petrify 2
 pettifog
 petty
-phobia
-phobic
-phony
+phobia 3
+phobic 3
+phony 2
 picket
 picketed
 picketing
@@ -3300,13 +3300,13 @@ pimple
 pinch
 pique
 pitiable
-pitiful
+pitiful 2
 pitifully
 pitiless
 pitilessly
 pittance
-pity
-plagiarize
+pity 2
+plagiarize 3
 plague
 plasticky
 plaything
@@ -3321,21 +3321,21 @@ plunder
 plunderer
 pointless
 pointlessly
-poison
-poisonous
-poisonously
+poison 3
+poisonous 3
+poisonously 3
 pokey
 poky
-polarisation
+polarisation 2
 polemize
 pollute
 polluter
 polluters
 polution
 pompous
-poor
-poorer
-poorest
+poor 2
+poorer 2
+poorest 2
 poorly
 posturing
 pout
@@ -3348,13 +3348,13 @@ precarious
 precariously
 precipitate
 precipitous
-predatory
+predatory 3
 predicament
-prejudge
-prejudice
-prejudices
-prejudicial
-premeditated
+prejudge 3
+prejudice 3
+prejudices 3
+prejudicial 3
+premeditated 3
 preoccupy
 preposterous
 preposterously
@@ -3373,11 +3373,11 @@ prickle
 prickles
 prideful
 prik
-primitive
-prison
-prisoner
-problem
-problematic
+primitive 2
+prison 2
+prisoner 2
+problem 2
+problematic 2.5
 problems
 procrastinate
 procrastinates
