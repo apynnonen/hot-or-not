@@ -43,3 +43,6 @@ Professor Marcus Darden is a professor at the University of Michigan who has had
 Professor Marcus Darden is a professor at the University of Michigan who has had comments written by 26 students. Using the VADER Comment Analysis method, professor Marcus Darden has a rating of 9.3, and has therefore earned the label Scalding. Ratemyprofessor gives this professor a score of 9.6.
 Professor Marcus Darden is a professor at the University of Michigan who has had comments written by 26 students. Using the VADER Sentence Analysis method, professor Marcus Darden has a rating of 7.3, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.6.
 
+Using the Opinion Lexicon method, for all the professors above, our score differs from the ratemyprofessor score by an average of 1.6 points.
+Using the VADER Comment Analysis method, for all the professors above, our score differs from the ratemyprofessor score by an average of 0.99 points.
+Using the VADER Sentence Analysis method, for all the professors above, our score differs from the ratemyprofessor score by an average of 2.42 points.

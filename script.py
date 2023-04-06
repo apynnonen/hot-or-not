@@ -1,5 +1,3 @@
-import bs4
-import requests
 import typing
 import string
 from selenium import webdriver
@@ -155,38 +153,38 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     return professor
 
 
-def scrape_deprecated(link: str) -> ProfessorRating:
-    # Scrape the ratemyprofessors website with the given link to find information about a professor
+# def scrape_deprecated(link: str) -> ProfessorRating:
+#     # Scrape the ratemyprofessors website with the given link to find information about a professor
 
-    # Get the page
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    page = requests.get(link, headers=headers)
-    soup = bs4.BeautifulSoup(page.text, 'html.parser')
+#     # Get the page
+#     headers = {
+#         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+#     page = requests.get(link, headers=headers)
+#     soup = bs4.BeautifulSoup(page.text, 'html.parser')
 
-    # Find true rating
-    true_rating = float(
-        soup.find("div", {"class": "RatingValue__Numerator-qw8sqy-2 liyUjw"}).next)*2
+#     # Find true rating
+#     true_rating = float(
+#         soup.find("div", {"class": "RatingValue__Numerator-qw8sqy-2 liyUjw"}).next)*2
 
-    # Find name and university
-    name_div = soup.find("div", {"class": "NameTitle__Name-dowf0z-0 cfjPUG"})
-    first_name = name_div.next.next
-    last_name = name_div.find(
-        "span", {"class": "NameTitle__LastNameWrapper-dowf0z-2 glXOHH"}).next
-    university = name_div.next_sibling.contents[1].next
+#     # Find name and university
+#     name_div = soup.find("div", {"class": "NameTitle__Name-dowf0z-0 cfjPUG"})
+#     first_name = name_div.next.next
+#     last_name = name_div.find(
+#         "span", {"class": "NameTitle__LastNameWrapper-dowf0z-2 glXOHH"}).next
+#     university = name_div.next_sibling.contents[1].next
 
-    # Load all the comments
+#     # Load all the comments
 
-    # Find comments
-    comments = []
-    comments_div = soup.find_all(
-        "div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
-    for comment in comments_div:
-        comments.append(comment.next)
+#     # Find comments
+#     comments = []
+#     comments_div = soup.find_all(
+#         "div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
+#     for comment in comments_div:
+#         comments.append(comment.next)
 
-    professor = ProfessorRating(
-        (first_name+" "+last_name), true_rating, link, university, comments)
-    return professor
+#     professor = ProfessorRating(
+#         (first_name+" "+last_name), true_rating, link, university, comments)
+#     return professor
 
 
 def opinion_lexicon(comment_list: typing.List[str]) -> float:
