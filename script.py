@@ -1,5 +1,3 @@
-import bs4
-import requests
 import typing
 import string
 from selenium import webdriver
@@ -9,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from nametolink import name_to_link
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from naivebayes import trainNaiveBayes, testNaiveBayes
 # Hot or Not
 
 DEBUG = 0  # Set this to 1 to get more console output
@@ -18,6 +17,7 @@ positive_lexicon = []
 negative_lexicon = []
 professor_table = {}
 name_table = {}
+bayesValues = []
 
 
 def get_label(score):
@@ -156,38 +156,38 @@ def scrape(link: str, name: str, university: str) -> ProfessorRating:
     return professor
 
 
-def scrape_deprecated(link: str) -> ProfessorRating:
-    # Scrape the ratemyprofessors website with the given link to find information about a professor
+# def scrape_deprecated(link: str) -> ProfessorRating:
+#     # Scrape the ratemyprofessors website with the given link to find information about a professor
 
-    # Get the page
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    page = requests.get(link, headers=headers)
-    soup = bs4.BeautifulSoup(page.text, 'html.parser')
+#     # Get the page
+#     headers = {
+#         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+#     page = requests.get(link, headers=headers)
+#     soup = bs4.BeautifulSoup(page.text, 'html.parser')
 
-    # Find true rating
-    true_rating = float(
-        soup.find("div", {"class": "RatingValue__Numerator-qw8sqy-2 liyUjw"}).next)*2
+#     # Find true rating
+#     true_rating = float(
+#         soup.find("div", {"class": "RatingValue__Numerator-qw8sqy-2 liyUjw"}).next)*2
 
-    # Find name and university
-    name_div = soup.find("div", {"class": "NameTitle__Name-dowf0z-0 cfjPUG"})
-    first_name = name_div.next.next
-    last_name = name_div.find(
-        "span", {"class": "NameTitle__LastNameWrapper-dowf0z-2 glXOHH"}).next
-    university = name_div.next_sibling.contents[1].next
+#     # Find name and university
+#     name_div = soup.find("div", {"class": "NameTitle__Name-dowf0z-0 cfjPUG"})
+#     first_name = name_div.next.next
+#     last_name = name_div.find(
+#         "span", {"class": "NameTitle__LastNameWrapper-dowf0z-2 glXOHH"}).next
+#     university = name_div.next_sibling.contents[1].next
 
-    # Load all the comments
+#     # Load all the comments
 
-    # Find comments
-    comments = []
-    comments_div = soup.find_all(
-        "div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
-    for comment in comments_div:
-        comments.append(comment.next)
+#     # Find comments
+#     comments = []
+#     comments_div = soup.find_all(
+#         "div", {"class": "Comments__StyledComments-dzzyvm-0 gRjWel"})
+#     for comment in comments_div:
+#         comments.append(comment.next)
 
-    professor = ProfessorRating(
-        (first_name+" "+last_name), true_rating, link, university, comments)
-    return professor
+#     professor = ProfessorRating(
+#         (first_name+" "+last_name), true_rating, link, university, comments)
+#     return professor
 
 
 def opinion_lexicon(comment_list: typing.List[str]) -> float:
@@ -244,6 +244,13 @@ def vaderCommentAnalysis(comment_list: typing.List[str]) -> float:
         score += float(vs['compound'])
     return round((score/len(comment_list)) * 5 + 5, 1)
 
+def naiveBayesAnalysis(comment_list: typing.List[str]) -> float:
+    total_pos = 0
+    for comment in comment_list:
+        verdict, _, _ = testNaiveBayes(bayesValues, comment)
+        if verdict == "pos":
+            total_pos += 1
+    return round((total_pos/len(comment_list)) * 10, 1)
 
 def call(name: str, university: str, option: str):
     # This method is called by the website to actually determine a professor's rating.
@@ -280,6 +287,11 @@ def getData(link, name, university, option):
         # VADER Setence Analysis, individually analyzing each sentence
         professor.homemade_rating = vaderSentenceAnalysis(professor.comments)
         professor.sentiment_method = "VADER Sentence Analysis"
+        return professor.return_summary()
+    elif option == 5:
+        # Naive Bayes Analysis, using 100 random positive and negative comments
+        professor.homemade_rating = naiveBayesAnalysis(professor.comments)
+        professor.sentiment_method = "Naive Bayes Analysis"
         return professor.return_summary()
     else:
         return "You selected an option that wasn't implemented, sorry."
@@ -337,6 +349,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+# Prime bayes and opinion lexicon
 
 with open("negative-words.txt") as f:
     for line in f:
@@ -344,3 +357,5 @@ with open("negative-words.txt") as f:
 with open("positive-words.txt") as f:
     for line in f:
         positive_lexicon.append(line.strip())
+
+bayesValues = trainNaiveBayes("bayes")
