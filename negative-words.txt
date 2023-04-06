@@ -4697,87 +4697,87 @@ weakening
 weaker
 weakness
 weaknesses
-weariness
-wearisome
-weary
-wedge
-weed
-weep
-weird
-weirdly
-wheedle
-whimper
-whine
-whining
-whiny
+weariness 1
+wearisome 1
+weary 1
+wedge 1
+weed 1
+weep 1
+weird 1
+weirdly 1
+wheedle 1
+whimper 1
+whine 1
+whining 1
+whiny 1
 whips
-whore
-whores
+whore 1
+whores 1
 wicked
 wickedly
 wickedness
-wild
-wildly
+wild 1
+wildly 1
 wiles
 wilt
 wily
-wimpy
-wince
+wimpy 1
+wince 1
 wobble
 wobbled
-wobbles
+wobbles 
 woe
 woebegone
-woeful
-woefully
-womanizer
-womanizing
-worn
-worried
-worriedly
-worrier
-worries
-worrisome
-worry
-worrying
-worryingly
-worse
-worsen
-worsening
-worst
-worthless
-worthlessly
-worthlessness
-wound
-wounds
-wrangle
-wrath
+woeful 2
+woefully 2
+womanizer 4
+womanizing 4
+worn 1
+worried 2
+worriedly 2
+worrier 2
+worries 2
+worrisome 2
+worry 2
+worrying 2
+worryingly 2
+worse 2
+worsen 2
+worsening 2
+worst 3
+worthless 3
+worthlessly 3
+worthlessness 3
+wound 2
+wounds 2
+wrangle 3
+wrath 5
 wreak
 wreaked
 wreaks
 wreck
 wrest
-wrestle
-wretch
-wretched
-wretchedly
-wretchedness
-wrinkle
-wrinkled
-wrinkles
-wrip
+wrestle 
+wretch 4
+wretched 4
+wretchedly 4
+wretchedness 4
+wrinkle 1
+wrinkled 1
+wrinkles 1
+wrip 
 wripped
 wripping
-writhe
-wrong
-wrongful
-wrongly
-wrought
-yawn
-zap
-zapped
-zaps
-zealot
-zealous
-zealously
-zombie
+writhe 
+wrong 2
+wrongful 3
+wrongly 3
+wrought 3
+yawn 3
+zap 1
+zapped 1 
+zaps 1
+zealot -2
+zealous -2
+zealously -2
+zombie 2
