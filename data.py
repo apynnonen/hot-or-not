@@ -12,13 +12,13 @@ def main():
         ("https://www.ratemyprofessors.com/professor/2300313", "Michael LoPresto", "University of Michigan"),
         ("https://www.ratemyprofessors.com/professor/1991134", "Marcus Darden", "University of Michigan")
     ]
-    options = [1,3,4] # Weighted opinion lexicon not real yet
+    options = [1,3,4,5] # Weighted opinion lexicon not real yet
     diffs = {}
     diffs["Opinion Lexicon"] = []
     # diffs["Weighted Opinion Lexicon"] = []
     diffs["VADER Comment Analysis"] = []
     diffs["VADER Sentence Analysis"] = []
-    # diffs["Naive Bayes Analysis"] = []
+    diffs["Naive Bayes Analysis"] = []
     with open("raw_data.txt", "w") as f:
         with open("annoted_data.txt", "w") as f2:
             for link, name, university in links:
