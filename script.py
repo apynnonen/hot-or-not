@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from nametolink import name_to_link
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from naivebayes import primeGlobalFiles, trainNaiveBayes, testNaiveBayes
 # Hot or Not
 
 DEBUG = 0  # Set this to 1 to get more console output
@@ -18,6 +19,7 @@ positive_lexicon = []
 negative_lexicon = []
 professor_table = {}
 name_table = {}
+bayesValues = []
 
 def get_label(score):
     # TODO Someone make these better later, this is what I came up with on short notice
@@ -241,6 +243,13 @@ def vaderCommentAnalysis(comment_list: typing.List[str]) ->float:
         score+= float(vs['compound'])
     return round((score/len(comment_list)) * 5 + 5, 1)
 
+def naiveBayesAnalysis(comment_list: typing.List[str]) -> float:
+    total_pos = 0
+    for comment in comment_list:
+        verdict, _, _ = testNaiveBayes(bayesValues, comment)
+        if verdict == "pos":
+            total_pos += 1
+    return round((total_pos/len(comment_list)) * 10, 1)
 
 def call(name: str, university: str, option: str):
     # This method is called by the website to actually determine a professor's rating.
@@ -276,6 +285,11 @@ def getData(link, name, university, option):
         # VADER Setence Analysis, individually analyzing each sentence
         professor.homemade_rating = vaderSentenceAnalysis(professor.comments)
         professor.sentiment_method = "VADER Sentence Analysis"
+        return professor.return_summary()
+    elif option == 5:
+        # Naive Bayes Analysis, using 100 random positive and negative comments
+        professor.homemade_rating = naiveBayesAnalysis(professor.comments)
+        professor.sentiment_method = "Naive Bayes Analysis"
         return professor.return_summary()
     else:
         return "You selected an option that wasn't implemented, sorry."
@@ -331,6 +345,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+# Prime bayes and opinion lexicon
 
 with open("negative-words.txt") as f:
     for line in f:
@@ -338,3 +353,5 @@ with open("negative-words.txt") as f:
 with open("positive-words.txt") as f:
     for line in f:
         positive_lexicon.append(line.strip())
+
+bayesValues = trainNaiveBayes("bayes")
