@@ -297,7 +297,7 @@ def getData(link, name, university, option):
         professor.homemade_rating = opinion_lexicon(professor.comments)
         professor.sentiment_method = "Opinion Lexicon"
         return professor.return_summary()
-    if option == 2:
+    elif option == 2:
         # Weighted opinion lexicon
         professor.sentiment_method = "Weighted Opinion Lexicon"
         return professor.return_summary()
@@ -386,12 +386,11 @@ with open("negative-words.txt") as f:
 with open("positive-words.txt") as f:
     for line in f:
         positive_lexicon.append(line.strip())
-
-bayesValues = trainNaiveBayes("bayes")
-
         k = line.strip().split(" ")
         positive_lexicon.append(k[0])
         if len(k) > 1:
             positive_weighted_lexicon[k[0]] = float(k[1])
         else:
             positive_weighted_lexicon[k[0]] = 1
+
+bayesValues = trainNaiveBayes("bayes")
