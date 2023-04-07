@@ -3378,35 +3378,35 @@ prison 2
 prisoner 2
 problem 2
 problematic 2.5
-problems
-procrastinate
-procrastinates
-procrastination
-profane
-profanity
-prohibit
-prohibitive
-prohibitively
-propaganda
-propagandize
+problems 2
+procrastinate 2
+procrastinates 2
+procrastination 2
+profane 2.5
+profanity 2.5
+prohibit 2
+prohibitive 2
+prohibitively 2
+propaganda 2.5
+propagandize 2
 proprietary
-prosecute
-protest
-protested
-protesting
-protests
+prosecute 2
+protest 2
+protested 2
+protesting 2
+protests 2
 protracted
-provocation
-provocative
-provoke
+provocation 1.5
+provocative 1.5
+provoke 2
 pry
 pugnacious
 pugnaciously
 pugnacity
 punch
-punish
-punishable
-punitive
+punish 2.5
+punishable 2
+punitive 2.5
 punk
 puny
 puppet
@@ -3418,26 +3418,26 @@ quack
 qualm
 qualms
 quandary
-quarrel
-quarrellous
-quarrellously
-quarrels
-quarrelsome
+quarrel 2
+quarrellous 2
+quarrellously 2
+quarrels 2
+quarrelsome 2
 quash
-queer
+queer 2
 questionable
-quibble
-quibbles
+quibble 2
+quibbles 2
 quitter
 rabid
-racism
-racist
-racists
-racy
-radical
-radicalization
+racism 5
+racist 5
+racists 5
+racy 3
+radical 2.5
+radicalization 2.5
 radically
-radicals
+radicals 2
 rage
 ragged
 raging
@@ -3449,14 +3449,14 @@ ramshackle
 rancor
 randomly
 rankle
-rant
+rant 2
 ranted
 ranting
 rantingly
 rants
-rape
-raped
-raping
+rape 5
+raped 5
+raping 5
 rascal
 rascals
 rash
@@ -3465,7 +3465,7 @@ rattled
 rattles
 ravage
 raving
-reactionary
+reactionary 2
 rebellious
 rebuff
 rebuke
@@ -3493,23 +3493,23 @@ refuting
 regress
 regression
 regressive
-regret
-regreted
-regretful
-regretfully
-regrets
-regrettable
-regrettably
-regretted
-reject
-rejected
+regret 2
+regreted 2
+regretful 2
+regretfully 2
+regrets 2
+regrettable 2
+regrettably 2
+regretted 2
+reject 2
+rejected 2
 rejecting
 rejection
 rejects
 relapse
-relentless
-relentlessly
-relentlessness
+relentless 1.5
+relentlessly 1.5
+relentlessness 1.5
 reluctance
 reluctant
 reluctantly
@@ -3562,10 +3562,10 @@ restrictive
 resurgent
 retaliate
 retaliatory
-retard
-retarded
-retardedness
-retards
+retard 5
+retarded 5
+retardedness 5
+retards 5
 reticent
 retract
 retreat
@@ -3577,8 +3577,8 @@ revert
 revile
 reviled
 revoke
-revolt
-revolting
+revolt 2.5
+revolting 2.5
 revoltingly
 revulsion
 revulsive
@@ -3616,19 +3616,19 @@ rotten
 rough
 rremediable
 rubbish
-rude
+rude 2
 rue
 ruffian
 ruffle
 ruin
-ruined
+ruined 2
 ruining
 ruinous
-ruins
+ruins 2
 rumbling
-rumor
-rumors
-rumours
+rumor 1.5
+rumors 1.5
+rumours 1.5
 rumple
 run-down
 runaway
@@ -3641,10 +3641,10 @@ ruthless
 ruthlessly
 ruthlessness
 ruts
-sabotage
+sabotage 2
 sack
 sacrificed
-sad
+sad 2
 sadden
 sadly
 sadness
@@ -3661,7 +3661,7 @@ sarcastic
 sarcastically
 sardonic
 sardonically
-sass
+sass 2
 satirical
 satirize
 savage
@@ -3669,27 +3669,27 @@ savaged
 savagery
 savages
 scaly
-scam
-scams
-scandal
-scandalize
-scandalized
-scandalous
-scandalously
-scandals
-scandel
-scandels
+scam 2.5
+scams 2.5
+scandal 2.5
+scandalize 2.5
+scandalized 2.5
+scandalous 2.5
+scandalously 2.5
+scandals 2.5
+scandel 2.5
+scandels 2.5
 scant
 scapegoat
 scar
 scarce
 scarcely
 scarcity
-scare
-scared
-scarier
-scariest
-scarily
+scare 1.5
+scared 1.5
+scarier 1.5
+scariest 1.5
+scarily 1.5
 scarred
 scars
 scary
@@ -3727,28 +3727,28 @@ screwed-up
 screwy
 scuff
 scuffs
-scum
-scummy
-second-class
+scum 2
+scummy 2
+second-class 2
 second-tier
 secretive
 sedentary
 seedy
-seethe
-seething
+seethe 2
+seething 2
 self-coup
 self-criticism
 self-defeating
 self-destructive
 self-humiliation
-self-interest
+self-interest 1.5
 self-interested
-self-serving
+self-serving 1.5
 selfinterested
-selfish
-selfishly
-selfishness
-semi-retarded
+selfish 1.5
+selfishly 1.5
+selfishness 1.5
+semi-retarded 4
 senile
 sensationalize
 senseless
@@ -3759,35 +3759,35 @@ servitude
 set-up
 setback
 setbacks
-sever
-severe
+sever 2
+severe 2.5
 severity
-sh*t
+sh*t 5
 shabby
 shadowy
-shady
+shady 2
 shake
 shaky
-shallow
-sham
+shallow 2
+sham 2.5
 shambles
 shame
-shameful
-shamefully
-shamefulness
-shameless
-shamelessly
-shamelessness
+shameful 2
+shamefully 2
+shamefulness 2
+shameless 2
+shamelessly 2
+shamelessness 2
 shark
 sharply
 shatter
-shemale
+shemale 5
 shimmer
 shimmy
 shipwreck
 shirk
 shirker
-shit
+shit 5
 shiver
 shock
 shocked
@@ -3812,7 +3812,7 @@ shroud
 shrouded
 shrug
 shun
-shunned
+shunned 1.5
 sick
 sicken
 sickening
@@ -3829,8 +3829,8 @@ simplistically
 sin
 sinful
 sinfully
-sinister
-sinisterly
+sinister 3
+sinisterly 3
 sink
 sinking
 skeletons
@@ -3838,65 +3838,65 @@ skeptic
 skeptical
 skeptically
 skepticism
-sketchy
+sketchy 1.5
 skimpy
 skinny
 skittish
 skittishly
 skulk
 slack
-slander
-slanderer
-slanderous
-slanderously
+slander 2
+slanderer 2
+slanderous 2
+slanderously 2
 slanders
 slap
 slashing
 slaughter
 slaughtered
-slave
-slaves
+slave 2
+slaves 2
 sleazy
 slime
 slog
 slogged
 slogging
 slogs
-sloooooooooooooow
-sloooow
-slooow
-sloow
+sloooooooooooooow 2
+sloooow 2
+slooow 2
+sloow 1.5
 sloppily
-sloppy
+sloppy 1.5
 sloth
 slothful
-slow
+slow 1.5
 slow-moving
 slowed
-slower
-slowest
+slower 1.5
+slowest 1.5
 slowly
 sloww
 slowww
 slowwww
 slug
-sluggish
+sluggish 1.5
 slump
 slumping
 slumpping
-slur
-slut
-sluts
+slur 3
+slut 4
+sluts 4
 sly
 smack
 smallish
 smash
 smear
-smell
-smelled
-smelling
-smells
-smelly
+smell 1.5
+smelled 1.5
+smelling 1.5
+smells 1.5
+smelly 2
 smelt
 smoke
 smokescreen
@@ -3911,10 +3911,10 @@ smudges
 smudging
 smug
 smugly
-smut
-smuttier
-smuttiest
-smutty
+smut 3
+smuttier 3
+smuttiest 3
+smutty 3
 snag
 snagged
 snagging
@@ -3963,10 +3963,10 @@ spews
 spilling
 spinster
 spiritless
-spite
-spiteful
-spitefully
-spitefulness
+spite 1.5
+spiteful 1.5
+spitefully 1.5
+spitefulness 1.5
 splatter
 split
 splitting
@@ -4022,15 +4022,15 @@ startlingly
 starvation
 starve
 static
-steal
-stealing
+steal 2.5
+stealing 2.5
 steals
 steep
 steeply
 stench
-stereotype
-stereotypical
-stereotypically
+stereotype 2
+stereotypical 1.5
+stereotypically 1.5
 stern
 stew
 sticky
@@ -4039,14 +4039,14 @@ stiffness
 stifle
 stifling
 stiflingly
-stigma
-stigmatize
+stigma 1.5
+stigmatize 1.5
 sting
 stinging
 stingingly
-stingy
-stink
-stinks
+stingy 2
+stink 2
+stinks 2
 stodgy
 stole
 stolen
@@ -4065,13 +4065,13 @@ strangest
 strangle
 streaky
 strenuous
-stress
-stresses
-stressful
-stressfully
+stress 2.5
+stresses 2.5
+stressful 2.5
+stressfully 2.5
 stricken
-strict
-strictly
+strict 2.5
+strictly 2.5
 strident
 stridently
 strife
@@ -4084,9 +4084,9 @@ struggled
 struggles
 struggling
 strut
-stubborn
-stubbornly
-stubbornness
+stubborn 2
+stubbornly 2
+stubbornness 2
 stuck
 stuffy
 stumble
@@ -4098,17 +4098,17 @@ stumps
 stun
 stunt
 stunted
-stupid
-stupidest
-stupidity
-stupidly
+stupid 2.5
+stupidest 2.5
+stupidity 2.5
+stupidly 2.5
 stupified
 stupify
 stupor
-stutter
-stuttered
-stuttering
-stutters
+stutter 2
+stuttered 2
+stuttering 2
+stutters 2
 sty
 stymied
 sub-par
@@ -4130,27 +4130,27 @@ subversive
 subversively
 subvert
 succumb
-suck
-sucked
-sucker
-sucks
-sucky
-sue
-sued
-sueing
-sues
-suffer
-suffered
-sufferer
-sufferers
-suffering
-suffers
-suffocate
+suck 2.5
+sucked 2.5
+sucker 2.5
+sucks 2.5
+sucky 2.5
+sue 2
+sued 2
+sueing 2
+sues 2
+suffer 2.5
+suffered 2.5
+sufferer 2.5
+sufferers 2.5
+suffering 2.5
+suffers 2.5
+suffocate 2.5
 sugar-coat
 sugar-coated
 sugarcoated
-suicidal
-suicide
+suicidal 5
+suicide 5
 sulk
 sullen
 sully
@@ -4194,7 +4194,7 @@ tangles
 tank
 tanked
 tanks
-tantrum
+tantrum 2.5
 tardy
 tarnish
 tarnished
@@ -4213,29 +4213,29 @@ teasingly
 tedious
 tediously
 temerity
-temper
+temper 2
 tempest
 temptation
 tenderness
-tense
-tension
+tense 2
+tension 2
 tentative
 tentatively
 tenuous
 tenuously
 tepid
-terrible
-terribleness
-terribly
-terror
+terrible 2.5
+terribleness 2.5
+terribly 2.5
+terror 2.5
 terror-genic
-terrorism
-terrorize
+terrorism 5
+terrorize 4
 testily
 testy
 tetchily
 tetchy
-thankless
+thankless 0.5
 thicker
 thirst
 thorny
@@ -4243,10 +4243,10 @@ thoughtless
 thoughtlessly
 thoughtlessness
 thrash
-threat
-threaten
-threatening
-threats
+threat 2.5
+threaten 2.5
+threatening 2.5
+threats 2.5
 threesome
 throb
 throbbed
@@ -4254,8 +4254,8 @@ throbbing
 throbs
 throttle
 thug
-thumb-down
-thumbs-down
+thumb-down 2
+thumbs-down 2
 thwart
 time-consuming
 timid
@@ -4265,67 +4265,67 @@ timidness
 tin-y
 tingled
 tingling
-tired
-tiresome
-tiring
-tiringly
-toil
-toll
+tired 2
+tiresome 2
+tiring 2
+tiringly 2
+toil 2
+toll 2
 top-heavy
 topple
 torment
 tormented
 torrent
-tortuous
-torture
-tortured
-tortures
-torturing
-torturous
-torturously
+tortuous 3
+torture 3
+tortured 3
+tortures 3
+torturing 3
+torturous 3
+torturously 3
 totalitarian
 touchy
 toughness
 tout
 touted
 touts
-toxic
+toxic 3
 traduce
-tragedy
-tragic
-tragically
-traitor
-traitorous
-traitorously
-tramp
+tragedy 2.5
+tragic 2.5
+tragically 2.5
+traitor 2.5
+traitorous 2.5
+traitorously 2.5
+tramp 1.5
 trample
 transgress
 transgression
-trap
+trap 1.5
 traped
-trapped
-trash
+trapped 1.5
+trash 2
 trashed
 trashy
-trauma
-traumatic
-traumatically
-traumatize
-traumatized
-travesties
+trauma 3
+traumatic 3
+traumatically 3
+traumatize 3
+traumatized 3
+travesties 2
 travesty
-treacherous
-treacherously
-treachery
+treacherous 2
+treacherously 2
+treachery 2
 treason
 treasonous
 trick
 tricked
 trickery
-tricky
-trivial
+tricky 2
+trivial 2
 trivialize
-trouble
+trouble 2
 troubled
 troublemaker
 troubles
@@ -4337,43 +4337,43 @@ truant
 tumble
 tumbled
 tumbles
-tumultuous
-turbulent
-turmoil
+tumultuous 2.5
+turbulent 2.5
+turmoil 2.5
 twist
 twisted
 twists
 two-faced
 two-faces
-tyrannical
-tyrannically
-tyranny
-tyrant
+tyrannical 3
+tyrannically 3
+tyranny 3
+tyrant 3
 ugh
-uglier
-ugliest
-ugliness
-ugly
+uglier 3
+ugliest 3
+ugliness 3
+ugly 3
 ulterior
 ultimatum
 ultimatums
 ultra-hardline
 un-viewable
 unable
-unacceptable
+unacceptable 1.5
 unacceptablely
 unacceptably
 unaccessible
 unaccustomed
 unachievable
-unaffordable
-unappealing
-unattractive
-unauthentic
-unavailable
+unaffordable 2
+unappealing 1.5
+unattractive 1.5
+unauthentic 1.5
+unavailable 1.5
 unavoidably
-unbearable
-unbearablely
+unbearable 2.5
+unbearablely 2.5
 unbelievable
 unbelievably
 uncaring
@@ -4383,8 +4383,8 @@ uncivilized
 unclean
 unclear
 uncollectible
-uncomfortable
-uncomfortably
+uncomfortable 2
+uncomfortably 2
 uncomfy
 uncompetitive
 uncompromising
@@ -4427,14 +4427,14 @@ uneasily
 uneasiness
 uneasy
 uneconomical
-unemployed
-unequal
-unethical
+unemployed 2
+unequal 2
+unethical 3
 uneven
-uneventful
+uneventful 2
 unexpected
 unexpectedly
-unexplained
+unexplained 2
 unfairly
 unfaithful
 unfaithfully
@@ -4442,9 +4442,9 @@ unfamiliar
 unfavorable
 unfeeling
 unfinished
-unfit
+unfit 2.5
 unforeseen
-unforgiving
+unforgiving 1.5
 unfortunate
 unfortunately
 unfounded
@@ -4462,7 +4462,7 @@ unilateralism
 unimaginable
 unimaginably
 unimportant
-uninformed
+uninformed 2.5
 uninsured
 unintelligible
 unintelligile
@@ -4472,7 +4472,7 @@ unjustifiable
 unjustifiably
 unjustified
 unjustly
-unkind
+unkind 1.5
 unkindly
 unknown
 unlamentable
@@ -4499,34 +4499,34 @@ unorthodox
 unorthodoxy
 unpleasant
 unpleasantries
-unpopular
+unpopular 2
 unpredictable
-unprepared
-unproductive
+unprepared 2
+unproductive 2
 unprofitable
 unprove
 unproved
 unproven
 unproves
 unproving
-unqualified
+unqualified 2.5
 unravel
 unraveled
 unreachable
 unreadable
-unrealistic
-unreasonable
-unreasonably
+unrealistic 2
+unreasonable 2
+unreasonably 2
 unrelenting
 unrelentingly
 unreliability
-unreliable
+unreliable 2
 unresolved
-unresponsive
+unresponsive 2
 unrest
 unruly
-unsafe
-unsatisfactory
+unsafe 2.5
+unsatisfactory 1.5
 unsavory
 unscrupulous
 unscrupulously
@@ -4537,22 +4537,22 @@ unsettled
 unsettling
 unsettlingly
 unskilled
-unsophisticated
+unsophisticated 1.5
 unsound
 unspeakable
 unspeakablely
 unspecified
-unstable
+unstable 2.5
 unsteadily
 unsteadiness
 unsteady
-unsuccessful
-unsuccessfully
+unsuccessful 2
+unsuccessfully 2
 unsupported
-unsupportive
+unsupportive 1.5
 unsure
 unsuspecting
-unsustainable
+unsustainable 2
 untenable
 untested
 unthinkable
@@ -4560,8 +4560,8 @@ unthinkably
 untimely
 untouched
 untrue
-untrustworthy
-untruthful
+untrustworthy 2.5
+untruthful 2.5
 unusable
 unusably
 unuseable
@@ -4592,19 +4592,19 @@ uproariously
 uproarous
 uproarously
 uproot
-upset
-upseting
-upsets
-upsetting
-upsettingly
+upset 2
+upseting 2
+upsets 2
+upsetting 2
+upsettingly 2
 urgent
-useless
+useless 2.5
 usurp
 usurper
 utterly
 vagrant
-vague
-vagueness
+vague 1.5
+vagueness 1.5
 vain
 vainly
 vanity
@@ -4632,26 +4632,26 @@ vice
 vicious
 viciously
 viciousness
-victimize
+victimize 2.5
 vile
 vileness
 vilify
-villainous
-villainously
-villains
-villian
-villianous
-villianously
-villify
+villainous 2
+villainously 2
+villains 2
+villian 2
+villianous 2
+villianously 2
+villify 2
 vindictive
 vindictively
 vindictiveness
-violate
-violation
-violator
-violators
-violent
-violently
+violate 3
+violation 3
+violator 3
+violators 3
+violent 4
+violently 4
 viper
 virulence
 virulent
@@ -4661,13 +4661,13 @@ vociferous
 vociferously
 volatile
 volatility
-vomit
-vomited
-vomiting
-vomits
-vulgar
+vomit 1.5
+vomited 1.5
+vomiting 1.5
+vomits 1.5
+vulgar 2.5
 vulnerable
-wack
+wack 1.5
 wail
 wallow
 wane
@@ -4691,48 +4691,48 @@ wasting
 water-down
 watered-down
 wayward
-weak
-weaken
-weakening
-weaker
-weakness
-weaknesses
-weariness 1
-wearisome 1
-weary 1
-wedge 1
-weed 1
-weep 1
-weird 1
-weirdly 1
-wheedle 1
-whimper 1
-whine 1
-whining 1
-whiny 1
+weak 1.5
+weaken 1.5
+weakening 1.5
+weaker 1.5
+weakness 1.5
+weaknesses 1.5
+weariness
+wearisome
+weary
+wedge
+weed
+weep
+weird
+weirdly
+wheedle
+whimper
+whine
+whining
+whiny
 whips
-whore 1
-whores 1
+whore 2
+whores 2
 wicked
 wickedly
 wickedness
-wild 1
-wildly 1
+wild
+wildly
 wiles
 wilt
 wily
-wimpy 1
-wince 1
+wimpy
+wince
 wobble
 wobbled
-wobbles 
+wobbles
 woe
 woebegone
 woeful 2
 woefully 2
 womanizer 4
 womanizing 4
-worn 1
+worn
 worried 2
 worriedly 2
 worrier 2
@@ -4757,26 +4757,26 @@ wreaked
 wreaks
 wreck
 wrest
-wrestle 
+wrestle
 wretch 4
 wretched 4
 wretchedly 4
 wretchedness 4
-wrinkle 1
-wrinkled 1
-wrinkles 1
-wrip 
+wrinkle
+wrinkled
+wrinkles
+wrip
 wripped
 wripping
-writhe 
+writhe
 wrong 2
 wrongful 3
 wrongly 3
 wrought 3
 yawn 3
-zap 1
-zapped 1 
-zaps 1
+zap
+zapped
+zaps
 zealot -2
 zealous -2
 zealously -2
