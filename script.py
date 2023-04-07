@@ -15,6 +15,8 @@ DEBUG = 0  # Set this to 1 to get more console output
 # Lexicons for opinion lexicon sentiment analysis
 positive_lexicon = []
 negative_lexicon = []
+positive_weighted_lexicon = {}
+negative_weighted_lexicon = {}
 professor_table = {}
 name_table = {}
 bayesValues = []
@@ -251,6 +253,23 @@ def naiveBayesAnalysis(comment_list: typing.List[str]) -> float:
         if verdict == "pos":
             total_pos += 1
     return round((total_pos/len(comment_list)) * 10, 1)
+def weightedOpinionLexicon(comment_list: typing.List[str]) -> float:
+    # Weighted opinion lexicon
+    global positive_weighted_lexicon
+    global negative_weighted_lexicon
+    score = 0
+    wc = 0
+    for comment in comment_list:
+        comment = clean(comment)
+        for word in comment.split(" "):
+            if word in positive_weighted_lexicon.keys:
+                score = score + positive_weighted_lexicon[word]
+                wc += abs(positive_weighted_lexicon[word])
+            if word in negative_weighted_lexicon.keys:
+                score = score - negative_weighted_lexicon[word]
+                wc += abs(negative_weighted_lexicon[word])
+    return round(((score)/wc) * 5 + 5, 1)
+
 
 def call(name: str, university: str, option: str):
     # This method is called by the website to actually determine a professor's rating.
@@ -277,6 +296,10 @@ def getData(link, name, university, option):
         # Opinion lexicon
         professor.homemade_rating = opinion_lexicon(professor.comments)
         professor.sentiment_method = "Opinion Lexicon"
+        return professor.return_summary()
+    if option == 2:
+        # Weighted opinion lexicon
+        professor.sentiment_method = "Weighted Opinion Lexicon"
         return professor.return_summary()
     elif option == 3:
         # VADER Comment Analysis, reading the entire comment at once
@@ -353,9 +376,22 @@ if __name__ == "__main__":
 
 with open("negative-words.txt") as f:
     for line in f:
-        negative_lexicon.append(line.strip())
+        k = line.strip().split(" ")
+        negative_lexicon.append(k[0])
+        if len(k) > 1:
+            negative_weighted_lexicon[k[0]] = float(k[1])
+        else:
+            negative_weighted_lexicon[k[0]] = 1
+
 with open("positive-words.txt") as f:
     for line in f:
         positive_lexicon.append(line.strip())
 
 bayesValues = trainNaiveBayes("bayes")
+
+        k = line.strip().split(" ")
+        positive_lexicon.append(k[0])
+        if len(k) > 1:
+            positive_weighted_lexicon[k[0]] = float(k[1])
+        else:
+            positive_weighted_lexicon[k[0]] = 1

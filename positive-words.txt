@@ -1,4 +1,4 @@
-a+
+a+ 2
 abound
 abounds
 abundance
@@ -25,17 +25,17 @@ achievible
 acumen
 adaptable
 adaptive
-adequate
+adequate 1
 adjustable
-admirable
+admirable 2
 admirably
 admiration
 admire
 admirer
-admiring
+admiring 2
 admiringly
 adorable
-adore
+adore 3
 adored
 adorer
 adoring
@@ -86,9 +86,9 @@ amaze
 amazed
 amazement
 amazes
-amazing
+amazing 3
 amazingly
-ambitious
+ambitious 2
 ambitiously
 ameliorate
 amenable
@@ -103,7 +103,7 @@ amity
 ample
 amply
 amuse
-amusing
+amusing 2
 amusingly
 angel
 angelic
@@ -113,7 +113,7 @@ appealing
 applaud
 appreciable
 appreciate
-appreciated
+appreciated 2
 appreciates
 appreciative
 appreciatively
@@ -134,17 +134,17 @@ assuredly
 assuring
 astonish
 astonished
-astonishing
+astonishing 3
 astonishingly
 astonishment
 astound
 astounded
-astounding
+astounding 3
 astoundingly
 astutely
 attentive
 attraction
-attractive
+attractive 2
 attractively
 attune
 audible
@@ -162,8 +162,8 @@ awarded
 awards
 awe
 awed
-awesome
-awesomely
+awesome 3
+awesomely 3
 awesomeness
 awestruck
 awsome
@@ -171,7 +171,7 @@ backbone
 balanced
 bargain
 beauteous
-beautiful
+beautiful 3
 beautifullly
 beautifully
 beautify
@@ -193,8 +193,8 @@ benefits
 benevolence
 benevolent
 benifits
-best
-best-known
+best 3
+best-known 2.5
 best-performing
 best-selling
 better
@@ -205,7 +205,7 @@ blameless
 bless
 blessing
 bliss
-blissful
+blissful 2
 blissfully
 blithe
 blockbuster
@@ -238,14 +238,14 @@ brighter
 brightest
 brilliance
 brilliances
-brilliant
+brilliant 3
 brilliantly
 brisk
 brotherly
 bullish
 buoyant
 cajole
-calm
+calm 1
 calming
 calmness
 capability
@@ -261,13 +261,13 @@ celebrate
 celebrated
 celebration
 celebratory
-champ
-champion
+champ 2.5
+champion 2
 charisma
-charismatic
+charismatic 2
 charitable
-charm
-charming
+charm 2
+charming 2.5
 charmingly
 chaste
 cheaper
@@ -331,9 +331,9 @@ complimentary
 comprehensive
 conciliate
 conciliatory
-concise
+concise 2
 confidence
-confident
+confident 2
 congenial
 congratulate
 congratulation
@@ -357,7 +357,7 @@ convienient
 convient
 convincing
 convincingly
-cool
+cool 1.5
 coolest
 cooperative
 cooperatively
@@ -369,14 +369,14 @@ cost-saving
 counter-attack
 counter-attacks
 courage
-courageous
+courageous 1.4
 courageously
 courageousness
 courteous
 courtly
 covenant
 cozy
-creative
+creative 2
 credence
 credible
 crisp
@@ -424,7 +424,7 @@ delightfulness
 dependable
 dependably
 deservedly
-deserving
+deserving 2
 desirable
 desiring
 desirous
@@ -438,7 +438,7 @@ dignified
 dignify
 dignity
 diligence
-diligent
+diligent 2
 diligently
 diplomatic
 dirt-cheap
@@ -463,7 +463,7 @@ dynamic
 eager
 eagerly
 eagerness
-earnest
+earnest 2
 earnestly
 earnestness
 ease
@@ -486,15 +486,15 @@ ecstasy
 ecstatic
 ecstatically
 edify
-educated
-effective
+educated 2
+effective 2
 effectively
 effectiveness
 effectual
 efficacious
-efficient
+efficient 2
 efficiently
-effortless
+effortless 2
 effortlessly
 effusion
 effusive
@@ -505,9 +505,9 @@ elate
 elated
 elatedly
 elation
-electrify
+electrify 2
 elegance
-elegant
+elegant 2
 elegantly
 elevate
 elite
@@ -571,9 +571,9 @@ enthral
 enthrall
 enthralled
 enthuse
-enthusiasm
-enthusiast
-enthusiastic
+enthusiasm 2
+enthusiast 2
+enthusiastic 2
 enthusiastically
 entice
 enticed
@@ -598,7 +598,7 @@ euphoria
 euphoric
 euphorically
 evaluative
-evenly
+evenly 2
 eventful
 everlasting
 evocative
@@ -618,33 +618,33 @@ exceedingly
 exceeds
 excel
 exceled
-excelent
+excelent 3
 excellant
 excelled
 excellence
 excellency
-excellent
+excellent 3
 excellently
 excels
-exceptional
-exceptionally
+exceptional 3
+exceptionally 3
 excite
 excited
 excitedly
 excitedness
 excitement
 excites
-exciting
+exciting 3
 excitingly
 exellent
 exemplar
 exemplary
 exhilarate
-exhilarating
-exhilaratingly
+exhilarating 3
+exhilaratingly 3
 exhilaration
 exonerate
-expansive
+expansive 2
 expeditiously
 expertly
 exquisite
@@ -663,13 +663,13 @@ exultingly
 eye-catch
 eye-catching
 eyecatch
-eyecatching
-fabulous
-fabulously
+eyecatching 3
+fabulous 3
+fabulously 3
 facilitate
-fair
-fairly
-fairness
+fair 2
+fairly 2
+fairness 2
 faith
 faithful
 faithfully
@@ -679,7 +679,7 @@ famed
 famous
 famously
 fancier
-fancinating
+fancinating 2
 fancy
 fanfare
 fans
@@ -769,19 +769,19 @@ fresh
 fresher
 freshest
 friendliness
-friendly
+friendly 3
 frolic
 frugal
 fruitful
 ftw
 fulfillment
-fun
+fun 2
 futurestic
 futuristic
 gaiety
 gaily
 gain
-gained
+gained 2
 gainful
 gainfully
 gaining
@@ -791,16 +791,16 @@ gallantly
 galore
 geekier
 geeky
-gem
+gem 2
 gems
-generosity
-generous
+generosity 2
+generous 2.5 2
 generously
-genial
+genial 2
 genius
-gentle
+gentle 2
 gentlest
-genuine
+genuine 2
 gifted
 glad
 gladden
@@ -817,7 +817,7 @@ glistening
 glitter
 glitz
 glorify
-glorious
+glorious 2
 gloriously
 glory
 glow
@@ -845,7 +845,7 @@ graciously
 graciousness
 grand
 grandeur
-grateful
+grateful 2.5
 gratefully
 gratification
 gratified
@@ -854,7 +854,7 @@ gratify
 gratifying
 gratifyingly
 gratitude
-great
+great 2.5
 greatest
 greatness
 grin
@@ -874,15 +874,15 @@ hallmarks
 hallowed
 handier
 handily
-hands-down
+hands-down 3
 handsome
 handsomely
 handy
-happier
-happily
+happier 2
+happily 2
 happiness
-happy
-hard-working
+happy 2
+hard-working 2
 hardier
 hardy
 harmless
@@ -900,27 +900,27 @@ heartfelt
 heartily
 heartwarming
 heaven
-heavenly
+heavenly 3
 helped
 helpful
-helping
-hero
-heroic
+helping 2
+hero 3
+heroic 3
 heroically
 heroine
 heroize
 heros
 high-quality
-high-spirited
-hilarious
-holy
+high-spirited 3
+hilarious 3
+holy 3
 homage
-honest
-honesty
+honest 2.5
+honesty 2.5
 honor
-honorable
-honored
-honoring
+honorable 2
+honored 2
+honoring 2
 hooray
 hopeful
 hospitable
@@ -930,14 +930,14 @@ hotcakes
 hottest
 hug
 humane
-humble
+humble 2
 humility
-humor
-humorous
-humorously
-humour
+humor 2
+humorous 2
+humorously 2
+humour 2
 humourous
-ideal
+ideal 1.5
 idealize
 ideally
 idol
@@ -946,26 +946,26 @@ idolized
 idyllic
 illuminate
 illuminati
-illuminating
+illuminating 2
 illumine
 illustrious
 ilu
 imaculate
 imaginative
-immaculate
+immaculate 2
 immaculately
-immense
+immense 2
 impartial
 impartiality
 impartially
 impassioned
-impeccable
+impeccable 2
 impeccably
-important
+important 1.5
 impress
 impressed
 impresses
-impressive
+impressive 1
 impressively
 impressiveness
 improve
@@ -1000,7 +1000,7 @@ inpressed
 insightful
 insightfully
 inspiration
-inspirational
+inspirational 2
 inspire
 inspiring
 instantly
@@ -1009,18 +1009,18 @@ instrumental
 integral
 integrated
 intelligence
-intelligent
+intelligent 1.5
 intelligible
-interesting
+interesting 1.5
 interests
 intimacy
 intimate
 intricate
 intrigue
-intriguing
-intriguingly
+intriguing 2
+intriguingly 2
 intuitive
-invaluable
+invaluable 2.5
 invaluablely
 inventive
 invigorate
@@ -1052,14 +1052,14 @@ jubilation
 jubiliant
 judicious
 justly
-keen
+keen 1.5
 keenly
 keenness
 kid-friendly
 kindliness
-kindly
-kindness
-knowledgeable
+kindly 1.5
+kindness 1.5
+knowledgeable 2.5
 kudos
 large-capacity
 laud
@@ -1074,8 +1074,8 @@ lead
 leading
 leads
 lean
-led
-legendary
+led 1.5
+legendary 3
 leverage
 levity
 liberate
@@ -1085,29 +1085,29 @@ lifesaver
 light-hearted
 lighter
 likable
-like
-liked
+like 1.5
+liked 1.5
 likes
-liking
+liking 1.5
 lionhearted
-lively
-logical
+lively 2
+logical 2
 long-lasting
-lovable
+lovable 3
 lovably
-love
-loved
-loveliness
-lovely
-lover
-loves
-loving
+love 3
+loved 3
+loveliness 3
+lovely 3
+lover 3
+loves 3
+loving 3
 low-cost
 low-price
 low-priced
 low-risk
 lower-priced
-loyal
+loyal 2
 loyalty
 lucid
 lucidly
@@ -1128,37 +1128,37 @@ luxuriously
 luxury
 lyrical
 magic
-magical
+magical 2
 magnanimous
 magnanimously
-magnificence
-magnificent
-magnificently
-majestic
+magnificence 3
+magnificent 3
+magnificently 3
+majestic 3
 majesty
 manageable
 maneuverable
-marvel
+marvel 3
 marveled
 marvelled
-marvellous
-marvelous
-marvelously
+marvellous 3
+marvelous 3
+marvelously 3
 marvelousness
 marvels
-master
-masterful
-masterfully
-masterpiece
+master 3
+masterful 3
+masterfully 3
+masterpiece 3
 masterpieces
-masters
-mastery
+masters 3
+mastery 3
 matchless
-mature
-maturely
-maturity
-meaningful
-memorable
+mature 2
+maturely 2
+maturity 2
+meaningful 2
+memorable 2
 merciful
 mercifully
 mercy
@@ -1168,23 +1168,23 @@ merrily
 merriment
 merriness
 merry
-mesmerize
-mesmerized
-mesmerizes
-mesmerizing
-mesmerizingly
+mesmerize 2
+mesmerized 2
+mesmerizes 2
+mesmerizing 2
+mesmerizingly 2
 meticulous
 meticulously
 mightily
 mighty
-mind-blowing
-miracle
-miracles
-miraculous
+mind-blowing 3
+miracle 2.5
+miracles 2.5
+miraculous 2.5
 miraculously
 miraculousness
-modern
-modest
+modern 1
+modest 1.5
 modesty
 momentous
 monumental
@@ -1196,10 +1196,10 @@ navigable
 neat
 neatest
 neatly
-nice
-nicely
-nicer
-nicest
+nice 1
+nicely 1
+nicer 1
+nicest 1
 nifty
 nimble
 noble
@@ -1208,7 +1208,7 @@ noiseless
 non-violence
 non-violent
 notably
-noteworthy
+noteworthy 1.5
 nourish
 nourishing
 nourishment
@@ -1222,7 +1222,7 @@ openly
 openness
 optimal
 optimism
-optimistic
+optimistic 1.5
 opulent
 orderly
 originality
@@ -1235,8 +1235,8 @@ outperforms
 outshine
 outshone
 outsmart
-outstanding
-outstandingly
+outstanding 3
+outstandingly 3
 outstrip
 outwit
 ovation
@@ -1261,8 +1261,8 @@ paradise
 paramount
 pardon
 passion
-passionate
-passionately
+passionate 3
+passionately 3
 patience
 patient
 patiently
@@ -1293,17 +1293,17 @@ phenomenally
 picturesque
 piety
 pinnacle
-playful
+playful 1.5
 playfully
-pleasant
-pleasantly
-pleased
+pleasant 1.5
+pleasantly 1.5
+pleased 1.5
 pleases
 pleasing
-pleasingly
-pleasurable
+pleasingly 2
+pleasurable 2
 pleasurably
-pleasure
+pleasure 2
 plentiful
 pluses
 plush
@@ -1314,15 +1314,15 @@ poignant
 poise
 poised
 polished
-polite
+polite 2
 politeness
 popular
 portable
 posh
-positive
-positively
-positives
-powerful
+positive 1.5
+positively 1.5
+positives 1.5
+powerful 2
 powerfully
 praise
 praiseworthy
@@ -1340,8 +1340,8 @@ preferes
 preferring
 prefers
 premier
-prestige
-prestigious
+prestige 2
+prestigious 2
 prettily
 pretty
 priceless
@@ -1355,12 +1355,12 @@ problem-free
 problem-solver
 prodigious
 prodigiously
-prodigy
-productive
-productively
-proficient
+prodigy 2
+productive 2
+productively 2
+proficient 2
 proficiently
-profound
+profound 2
 profoundly
 profuse
 profusion
@@ -1368,7 +1368,7 @@ progress
 progressive
 prolific
 prominence
-prominent
+prominent 2
 promise
 promised
 promises
@@ -1388,7 +1388,7 @@ prospros
 protect
 protection
 protective
-proud
+proud 1.5
 proven
 proves
 providence
@@ -1402,7 +1402,7 @@ pure
 purify
 purposeful
 quaint
-qualified
+qualified 1.5
 qualify
 quicker
 quiet
@@ -1427,12 +1427,12 @@ reaffirm
 reaffirmation
 realistic
 realizable
-reasonable
-reasonably
+reasonable 1.5
+reasonably 1.5
 reasoned
 reassurance
 reassure
-receptive
+receptive 1.5
 reclaim
 recomend
 recommend
@@ -1477,32 +1477,32 @@ reliable
 reliably
 relief
 relish
-remarkable
-remarkably
+remarkable 2
+remarkably 2
 remedy
 remission
 remunerate
 renaissance
 renewed
 renown
-renowned
+renowned 2
 replaceable
-reputable
+reputable 2
 reputation
 resilient
 resolute
 resound
 resounding
-resourceful
+resourceful 2
 resourcefulness
-respect
-respectable
-respectful
-respectfully
+respect 3
+respectable 3
+respectful 3
+respectfully 3
 respite
 resplendent
-responsibly
-responsive
+responsibly 2
+responsive 2
 restful
 restored
 restructure
@@ -1523,8 +1523,8 @@ revolutionary
 revolutionize
 revolutionized
 revolutionizes
-reward
-rewarding
+reward 1.5
+rewarding 1.5
 rewardingly
 rich
 richer
@@ -1532,7 +1532,7 @@ richly
 richness
 right
 righten
-righteous
+righteous 2
 righteously
 righteousness
 rightful
@@ -1541,7 +1541,7 @@ rightly
 rightness
 risk-free
 robust
-rock-star
+rock-star 3
 rock-stars
 rockstar
 rockstars
@@ -1562,30 +1562,30 @@ salutary
 salute
 sane
 satisfactorily
-satisfactory
-satisfied
-satisfies
-satisfy
-satisfying
-satisified
-saver
+satisfactory 1.5
+satisfied 1.5
+satisfies 1.5
+satisfy 1.5
+satisfying 1.5
+satisified 1.5
+saver 2.5
 savings
 savior
 savvy
 scenic
-seamless
-seasoned
+seamless 2
+seasoned 2
 secure
 securely
 selective
 self-determination
-self-respect
+self-respect 2
 self-satisfaction
 self-sufficiency
 self-sufficient
-sensation
-sensational
-sensationally
+sensation 3
+sensational 3
+sensationally 3
 sensations
 sensible
 sensibly
@@ -1600,20 +1600,20 @@ shimmering
 shimmeringly
 shine
 shiny
-significant
+significant 2
 silent
 simpler
 simplest
-simplified
+simplified 2
 simplifies
-simplify
+simplify 2
 simplifying
-sincere
-sincerely
+sincere 2
+sincerely 2
 sincerity
-skill
-skilled
-skillful
+skill 2
+skilled 2 
+skillful 2
 skillfully
 slammin
 sleek
@@ -1644,25 +1644,25 @@ solid
 solidarity
 soothe
 soothingly
-sophisticated
+sophisticated 2
 soulful
 soundly
 soundness
 spacious
 sparkle
 sparkling
-spectacular
-spectacularly
+spectacular 3
+spectacularly 3
 speedily
 speedy
 spellbind
 spellbinding
 spellbindingly
 spellbound
-spirited
+spirited 2
 spiritual
-splendid
-splendidly
+splendid 3
+splendidly 3
 splendor
 spontaneous
 sporty
@@ -1673,7 +1673,7 @@ stabilize
 stable
 stainless
 standout
-state-of-the-art
+state-of-the-art 3
 stately
 statuesque
 staunch
@@ -1685,8 +1685,8 @@ steadfastness
 steadiest
 steadiness
 steady
-stellar
-stellarly
+stellar 3
+stellarly 3
 stimulate
 stimulates
 stimulating
@@ -1702,7 +1702,7 @@ strong
 stronger
 strongest
 stunned
-stunning
+stunning 2
 stunningly
 stupendous
 stupendously
@@ -1724,10 +1724,10 @@ succeeded
 succeeding
 succeeds
 succes
-success
-successes
-successful
-successfully
+success 3
+successes 3
+successful 3
+successfully 3
 suffice
 sufficed
 suffices
@@ -1737,11 +1737,11 @@ suitable
 sumptuous
 sumptuously
 sumptuousness
-super
-superb
-superbly
-superior
-superiority
+super 3
+superb 3
+superbly 3
+superior 3
+superiority 3
 supple
 support
 supported
@@ -1750,9 +1750,9 @@ supporting
 supportive
 supports
 supremacy
-supreme
+supreme 3
 supremely
-supurb
+supurb 3
 supurbly
 surmount
 surpass
@@ -1766,15 +1766,15 @@ swankier
 swankiest
 swanky
 sweeping
-sweet
+sweet 3
 sweeten
-sweetheart
+sweetheart 3
 sweetly
 sweetness
 swift
 swiftness
-talent
-talented
+talent 3
+talented 3
 talents
 tantalize
 tantalizing
@@ -1787,19 +1787,19 @@ tenaciously
 tenacity
 tender
 tenderly
-terrific
-terrifically
-thank
-thankful
+terrific 3
+terrifically 3
+thank 3
+thankful 3
 thinner
-thoughtful
-thoughtfully
+thoughtful 2.5
+thoughtfully 2.5
 thoughtfulness
 thrift
 thrifty
-thrill
-thrilled
-thrilling
+thrill 2.5
+thrilled 2.5
+thrilling 2.5
 thrillingly
 thrills
 thrive
@@ -1817,12 +1817,12 @@ titillatingly
 togetherness
 tolerable
 toll-free
-top
-top-notch
-top-quality
+top 3
+top-notch 3
+top-quality 3
 topnotch
 tops
-tough
+tough 0.5
 tougher
 toughest
 traction
@@ -1841,16 +1841,16 @@ trophy
 trouble-free
 trump
 trumpet
-trust
-trusted
-trusting
-trustingly
-trustworthiness
-trustworthy
-trusty
-truthful
-truthfully
-truthfulness
+trust 2
+trusted 2
+trusting 2
+trustingly 2
+trustworthiness 2
+trustworthy 2
+trusty 2
+truthful 2
+truthfully 2
+truthfulness 2
 twinkly
 ultra-crisp
 unabashed
@@ -1858,10 +1858,10 @@ unabashedly
 unaffected
 unassailable
 unbeatable
-unbiased
+unbiased 2.5
 unbound
 uncomplicated
-unconditional
+unconditional 2
 undamaged
 undaunted
 understandable
@@ -1877,7 +1877,7 @@ unforgettable
 unity
 unlimited
 unmatched
-unparalleled
+unparalleled 2.5
 unquestionable
 unquestionably
 unreal
@@ -1891,14 +1891,14 @@ upgradeable
 upgraded
 upheld
 uphold
-uplift
-uplifting
-upliftingly
+uplift 2
+uplifting 2
+upliftingly 2
 upliftment
 upscale
-usable
-useable
-useful
+usable 2
+useable 2
+useful 2
 user-friendly
 user-replaceable
 valiant
@@ -1909,10 +1909,10 @@ variety
 venerate
 verifiable
 veritable
-versatile
+versatile 2
 versatility
-vibrant
-vibrantly
+vibrant 2
+vibrantly 2
 victorious
 victory
 viewable
@@ -1926,38 +1926,38 @@ vivacious
 vivid
 vouch
 vouchsafe
-warm
+warm 2.5
 warmer
-warmhearted
-warmly
-warmth
+warmhearted 2.5
+warmly 2
+warmth 2
 wealthy
-welcome
+welcome 2
 well
 well-backlit
-well-balanced
-well-behaved
+well-balanced 2
+well-behaved 2
 well-being
 well-bred
 well-connected
-well-educated
-well-established
-well-informed
-well-intentioned
-well-known
+well-educated 2
+well-established 2
+well-informed 2
+well-intentioned 2
+well-known 2
 well-made
 well-managed
-well-mannered
+well-mannered 2
 well-positioned
-well-received
+well-received 2
 well-regarded
-well-rounded
+well-rounded 2
 well-run
 well-wishers
 wellbeing
-whoa
-wholeheartedly
-wholesome
+whoa 2
+wholeheartedly 2
+wholesome 2
 whooa
 whoooa
 wieldy
@@ -1967,37 +1967,37 @@ willingness
 win
 windfall
 winnable
-winner
+winner 2
 winners
 winning
 wins
-wisdom
-wise
+wisdom 3
+wise 2.5
 wisely
-witty
+witty 2
 won
-wonder
-wonderful
-wonderfully
-wonderous
-wonderously
-wonders
-wondrous
+wonder 3
+wonderful 3
+wonderfully 3
+wonderous 3
+wonderously 3
+wonders 3
+wondrous 3
 woo
 work
 workable
 worked
 works
 world-famous
-worth
-worth-while
-worthiness
-worthwhile
+worth 2
+worth-while 2
+worthiness 2
+worthwhile 2
 worthy
-wow
+wow 3
 wowed
 wowing
-wows
+wows 3
 yay
 youthful
 zeal
