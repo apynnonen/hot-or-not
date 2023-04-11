@@ -2392,7 +2392,7 @@ infest
 infested
 infidel 3
 infidels 3
-infiltrator  2
+infiltrator 2
 infiltrators 2
 infirm
 inflame

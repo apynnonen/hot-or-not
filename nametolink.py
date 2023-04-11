@@ -26,6 +26,9 @@ def name_to_link(name, university):
     page = requests.get(URL, headers=headers).text
     soup = bs4.BeautifulSoup(page, 'html.parser')
     # find first result <a> tag
+    # google_html = open('google.html', 'w')
+    # google_html.write(str(soup.prettify()))
+    # google_html.close()
     link = soup.find("div", {"class": "egMi0 kCrYT"})
     link = link.find("a")
 
@@ -36,10 +39,15 @@ def name_to_link(name, university):
         temp = str(link).find("/professor/") + 11
         temp2 = str(link).find("&amp", temp-11)
         if temp == 10:
-            print("Invalid credentials!")
-            print("Try again")
-            raise ValueError
-            return 1
+            temp = str(soup).find(
+                "https://www.ratemyprofessors.com/professor/") + 43
+            temp2 = str(soup).find("&amp", temp-43)
+            link = str(soup)
+            if temp == -1:
+                print("Invalid credentials!")
+                print("Try again")
+                raise ValueError
+                return 1
     tid = str(link)[temp:temp2]
     link = "https://www.ratemyprofessors.com/professor?tid=" + str(tid)
     return link, name.title(), university.title()

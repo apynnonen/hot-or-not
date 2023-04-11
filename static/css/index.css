@@ -23,6 +23,7 @@ button{
     display: inline;
 }
 .wrapper-class{
+    margin-top: 2%;
     position: relative;
     top: 40%;
     left: 50%;
