@@ -1,48 +1,158 @@
 Annotated scores for Andrew DeOrio from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/1765657:
-Professor Andrew DeOrio is a professor at the University of Michigan who has had comments written by 128 students. Using the Opinion Lexicon method, professor Andrew DeOrio has a rating of 7.3, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.8.
-Professor Andrew DeOrio is a professor at the University of Michigan who has had comments written by 128 students. Using the VADER Comment Analysis method, professor Andrew DeOrio has a rating of 8.1, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 9.8.
-Professor Andrew DeOrio is a professor at the University of Michigan who has had comments written by 128 students. Using the VADER Sentence Analysis method, professor Andrew DeOrio has a rating of 6.5, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 9.8.
+Professor Andrew DeOrio has had comments written by 128 students.
+ Opinion Lexicon rating: 7.3 ☕️
+ Ratemyprofessor gives this professor a score of 9.8.
+Professor Andrew DeOrio has had comments written by 128 students.
+ Weighted Opinion Lexicon rating: 7.3 ☕️
+ Ratemyprofessor gives this professor a score of 9.8.
+Professor Andrew DeOrio has had comments written by 128 students.
+ VADER Comment Analysis rating: 8.1 🥵
+ Ratemyprofessor gives this professor a score of 9.8.
+Professor Andrew DeOrio has had comments written by 128 students.
+ VADER Sentence Analysis rating: 6.5 ☀️
+ Ratemyprofessor gives this professor a score of 9.8.
+Professor Andrew DeOrio has had comments written by 128 students.
+ Naive Bayes Analysis rating: 7.2 ☕️
+ Ratemyprofessor gives this professor a score of 9.8.
 
 Annotated scores for David Paoletti from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/1836686:
-Professor David Paoletti is a professor at the University of Michigan who has had comments written by 78 students. Using the Opinion Lexicon method, professor David Paoletti has a rating of 7.7, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 10.0.
-Professor David Paoletti is a professor at the University of Michigan who has had comments written by 78 students. Using the VADER Comment Analysis method, professor David Paoletti has a rating of 8.7, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 10.0.
-Professor David Paoletti is a professor at the University of Michigan who has had comments written by 78 students. Using the VADER Sentence Analysis method, professor David Paoletti has a rating of 6.7, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 10.0.
+Professor David Paoletti has had comments written by 78 students.
+ Opinion Lexicon rating: 7.7 ☕️
+ Ratemyprofessor gives this professor a score of 10.0.
+Professor David Paoletti has had comments written by 78 students.
+ Weighted Opinion Lexicon rating: 7.7 ☕️
+ Ratemyprofessor gives this professor a score of 10.0.
+Professor David Paoletti has had comments written by 78 students.
+ VADER Comment Analysis rating: 8.7 🥵
+ Ratemyprofessor gives this professor a score of 10.0.
+Professor David Paoletti has had comments written by 78 students.
+ VADER Sentence Analysis rating: 6.7 ☀️
+ Ratemyprofessor gives this professor a score of 10.0.
+Professor David Paoletti has had comments written by 78 students.
+ Naive Bayes Analysis rating: 6.9 ☀️
+ Ratemyprofessor gives this professor a score of 10.0.
 
 Annotated scores for Atul Prakash from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/842649:
-Professor Atul Prakash is a professor at the University of Michigan who has had comments written by 21 students. Using the Opinion Lexicon method, professor Atul Prakash has a rating of 6.6, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 7.4.
-Professor Atul Prakash is a professor at the University of Michigan who has had comments written by 21 students. Using the VADER Comment Analysis method, professor Atul Prakash has a rating of 6.3, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 7.4.
-Professor Atul Prakash is a professor at the University of Michigan who has had comments written by 21 students. Using the VADER Sentence Analysis method, professor Atul Prakash has a rating of 5.5, and has therefore earned the label Room Temp. Ratemyprofessor gives this professor a score of 7.4.
+Professor Atul Prakash has had comments written by 21 students.
+ Opinion Lexicon rating: 6.6 ☀️
+ Ratemyprofessor gives this professor a score of 7.4.
+Professor Atul Prakash has had comments written by 21 students.
+ Weighted Opinion Lexicon rating: 6.6 ☀️
+ Ratemyprofessor gives this professor a score of 7.4.
+Professor Atul Prakash has had comments written by 21 students.
+ VADER Comment Analysis rating: 6.3 ☀️
+ Ratemyprofessor gives this professor a score of 7.4.
+Professor Atul Prakash has had comments written by 21 students.
+ VADER Sentence Analysis rating: 5.5 🌤
+ Ratemyprofessor gives this professor a score of 7.4.
+Professor Atul Prakash has had comments written by 21 students.
+ Naive Bayes Analysis rating: 5.2 🌤
+ Ratemyprofessor gives this professor a score of 7.4.
 
 Annotated scores for Rada Mihalcea from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/1915339:
-Professor Rada Mihalcea is a professor at the University of Michigan who has had comments written by 10 students. Using the Opinion Lexicon method, professor Rada Mihalcea has a rating of 9.0, and has therefore earned the label Scalding. Ratemyprofessor gives this professor a score of 8.2.
-Professor Rada Mihalcea is a professor at the University of Michigan who has had comments written by 10 students. Using the VADER Comment Analysis method, professor Rada Mihalcea has a rating of 7.8, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 8.2.
-Professor Rada Mihalcea is a professor at the University of Michigan who has had comments written by 10 students. Using the VADER Sentence Analysis method, professor Rada Mihalcea has a rating of 7.0, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 8.2.
+Professor Rada Mihalcea has had comments written by 10 students.
+ Opinion Lexicon rating: 9.0 🔥
+ Ratemyprofessor gives this professor a score of 8.2.
+Professor Rada Mihalcea has had comments written by 10 students.
+ Weighted Opinion Lexicon rating: 9.0 🔥
+ Ratemyprofessor gives this professor a score of 8.2.
+Professor Rada Mihalcea has had comments written by 10 students.
+ VADER Comment Analysis rating: 7.8 ☕️
+ Ratemyprofessor gives this professor a score of 8.2.
+Professor Rada Mihalcea has had comments written by 10 students.
+ VADER Sentence Analysis rating: 7.0 ☕️
+ Ratemyprofessor gives this professor a score of 8.2.
+Professor Rada Mihalcea has had comments written by 10 students.
+ Naive Bayes Analysis rating: 9.0 🔥
+ Ratemyprofessor gives this professor a score of 8.2.
 
 Annotated scores for Westley Weimer from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/2277209:
-Professor Westley Weimer is a professor at the University of Michigan who has had comments written by 19 students. Using the Opinion Lexicon method, professor Westley Weimer has a rating of 7.6, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.2.
-Professor Westley Weimer is a professor at the University of Michigan who has had comments written by 19 students. Using the VADER Comment Analysis method, professor Westley Weimer has a rating of 8.2, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 9.2.
-Professor Westley Weimer is a professor at the University of Michigan who has had comments written by 19 students. Using the VADER Sentence Analysis method, professor Westley Weimer has a rating of 6.7, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 9.2.
+Professor Westley Weimer has had comments written by 19 students.
+ Opinion Lexicon rating: 7.6 ☕️
+ Ratemyprofessor gives this professor a score of 9.2.
+Professor Westley Weimer has had comments written by 19 students.
+ Weighted Opinion Lexicon rating: 7.6 ☕️
+ Ratemyprofessor gives this professor a score of 9.2.
+Professor Westley Weimer has had comments written by 19 students.
+ VADER Comment Analysis rating: 8.2 🥵
+ Ratemyprofessor gives this professor a score of 9.2.
+Professor Westley Weimer has had comments written by 19 students.
+ VADER Sentence Analysis rating: 6.7 ☀️
+ Ratemyprofessor gives this professor a score of 9.2.
+Professor Westley Weimer has had comments written by 19 students.
+ Naive Bayes Analysis rating: 6.8 ☀️
+ Ratemyprofessor gives this professor a score of 9.2.
 
 Annotated scores for Brian Noble from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/140940:
-Professor Brian Noble is a professor at the University of Michigan who has had comments written by 52 students. Using the Opinion Lexicon method, professor Brian Noble has a rating of 6.6, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 8.6.
-Professor Brian Noble is a professor at the University of Michigan who has had comments written by 52 students. Using the VADER Comment Analysis method, professor Brian Noble has a rating of 7.2, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 8.6.
-Professor Brian Noble is a professor at the University of Michigan who has had comments written by 52 students. Using the VADER Sentence Analysis method, professor Brian Noble has a rating of 6.3, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 8.6.
+Professor Brian Noble has had comments written by 52 students.
+ Opinion Lexicon rating: 6.6 ☀️
+ Ratemyprofessor gives this professor a score of 8.6.
+Professor Brian Noble has had comments written by 52 students.
+ Weighted Opinion Lexicon rating: 6.6 ☀️
+ Ratemyprofessor gives this professor a score of 8.6.
+Professor Brian Noble has had comments written by 52 students.
+ VADER Comment Analysis rating: 7.2 ☕️
+ Ratemyprofessor gives this professor a score of 8.6.
+Professor Brian Noble has had comments written by 52 students.
+ VADER Sentence Analysis rating: 6.3 ☀️
+ Ratemyprofessor gives this professor a score of 8.6.
+Professor Brian Noble has had comments written by 52 students.
+ Naive Bayes Analysis rating: 5.2 🌤
+ Ratemyprofessor gives this professor a score of 8.6.
 
 Annotated scores for John Benedict from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/2244255:
-Professor John Benedict is a professor at the University of Michigan who has had comments written by 25 students. Using the Opinion Lexicon method, professor John Benedict has a rating of 8.6, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 9.6.
-Professor John Benedict is a professor at the University of Michigan who has had comments written by 25 students. Using the VADER Comment Analysis method, professor John Benedict has a rating of 9.2, and has therefore earned the label Scalding. Ratemyprofessor gives this professor a score of 9.6.
-Professor John Benedict is a professor at the University of Michigan who has had comments written by 25 students. Using the VADER Sentence Analysis method, professor John Benedict has a rating of 7.3, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.6.
+Professor John Benedict has had comments written by 25 students.
+ Opinion Lexicon rating: 8.6 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor John Benedict has had comments written by 25 students.
+ Weighted Opinion Lexicon rating: 8.6 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor John Benedict has had comments written by 25 students.
+ VADER Comment Analysis rating: 9.2 🔥
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor John Benedict has had comments written by 25 students.
+ VADER Sentence Analysis rating: 7.3 ☕️
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor John Benedict has had comments written by 25 students.
+ Naive Bayes Analysis rating: 8.8 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
 
 Annotated scores for Michael LoPresto from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/2300313:
-Professor Michael LoPresto is a professor at the University of Michigan who has had comments written by 16 students. Using the Opinion Lexicon method, professor Michael LoPresto has a rating of 7.5, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.6.
-Professor Michael LoPresto is a professor at the University of Michigan who has had comments written by 16 students. Using the VADER Comment Analysis method, professor Michael LoPresto has a rating of 8.3, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 9.6.
-Professor Michael LoPresto is a professor at the University of Michigan who has had comments written by 16 students. Using the VADER Sentence Analysis method, professor Michael LoPresto has a rating of 6.9, and has therefore earned the label Warm. Ratemyprofessor gives this professor a score of 9.6.
+Professor Michael LoPresto has had comments written by 16 students.
+ Opinion Lexicon rating: 7.5 ☕️
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Michael LoPresto has had comments written by 16 students.
+ Weighted Opinion Lexicon rating: 7.5 ☕️
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Michael LoPresto has had comments written by 16 students.
+ VADER Comment Analysis rating: 8.3 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Michael LoPresto has had comments written by 16 students.
+ VADER Sentence Analysis rating: 6.9 ☀️
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Michael LoPresto has had comments written by 16 students.
+ Naive Bayes Analysis rating: 6.2 ☀️
+ Ratemyprofessor gives this professor a score of 9.6.
 
 Annotated scores for Marcus Darden from University of Michigan, at RMP link https://www.ratemyprofessors.com/professor/1991134:
-Professor Marcus Darden is a professor at the University of Michigan who has had comments written by 26 students. Using the Opinion Lexicon method, professor Marcus Darden has a rating of 8.3, and has therefore earned the label Flaming. Ratemyprofessor gives this professor a score of 9.6.
-Professor Marcus Darden is a professor at the University of Michigan who has had comments written by 26 students. Using the VADER Comment Analysis method, professor Marcus Darden has a rating of 9.3, and has therefore earned the label Scalding. Ratemyprofessor gives this professor a score of 9.6.
-Professor Marcus Darden is a professor at the University of Michigan who has had comments written by 26 students. Using the VADER Sentence Analysis method, professor Marcus Darden has a rating of 7.3, and has therefore earned the label Toasty. Ratemyprofessor gives this professor a score of 9.6.
+Professor Marcus Darden has had comments written by 26 students.
+ Opinion Lexicon rating: 8.3 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Marcus Darden has had comments written by 26 students.
+ Weighted Opinion Lexicon rating: 8.3 🥵
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Marcus Darden has had comments written by 26 students.
+ VADER Comment Analysis rating: 9.3 🔥
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Marcus Darden has had comments written by 26 students.
+ VADER Sentence Analysis rating: 7.3 ☕️
+ Ratemyprofessor gives this professor a score of 9.6.
+Professor Marcus Darden has had comments written by 26 students.
+ Naive Bayes Analysis rating: 7.3 ☕️
+ Ratemyprofessor gives this professor a score of 9.6.
 
 Using the Opinion Lexicon method, for all the professors above, our score differs from the ratemyprofessor score by an average of 1.6 points.
+Using the Weighted Opinion Lexicon method, for all the professors above, our score differs from the ratemyprofessor score by an average of 1.6 points.
 Using the VADER Comment Analysis method, for all the professors above, our score differs from the ratemyprofessor score by an average of 0.99 points.
 Using the VADER Sentence Analysis method, for all the professors above, our score differs from the ratemyprofessor score by an average of 2.42 points.
+Using the Naive Bayes Analysis method, for all the professors above, our score differs from the ratemyprofessor score by an average of 2.33 points.

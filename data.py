@@ -15,7 +15,7 @@ def main():
     options = [1,2,3,4,5] # Weighted opinion lexicon not real yet
     diffs = {}
     diffs["Opinion Lexicon"] = []
-    # diffs["Weighted Opinion Lexicon"] = []
+    diffs["Weighted Opinion Lexicon"] = []
     diffs["VADER Comment Analysis"] = []
     diffs["VADER Sentence Analysis"] = []
     diffs["Naive Bayes Analysis"] = []
