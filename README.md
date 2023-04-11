@@ -23,4 +23,5 @@ The actual website requires a professor's name and university to be inputted int
 If you want to be able to step through and actually debug the program, use the launch.json file added to github. It'll then hit your breakpoints.
 
 Our data can be found in the raw_data.txt file which displays comments scraped for various professors.
+
 Our annotated data can be found in the annotated_data.txt file which displays our results for each method for various professors as well as average differences between our scores and the scores provided by the website (adjusted to our 10 point scale).
