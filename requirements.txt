@@ -1,2 +1,3 @@
 pip install vaderSentiment
 pip install selenium
+pip install flask
