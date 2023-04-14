@@ -262,10 +262,10 @@ def weightedOpinionLexicon(comment_list: typing.List[str]) -> float:
     for comment in comment_list:
         comment = clean(comment)
         for word in comment.split(" "):
-            if word in positive_weighted_lexicon.keys:
+            if word in positive_weighted_lexicon:
                 score = score + positive_weighted_lexicon[word]
                 wc += abs(positive_weighted_lexicon[word])
-            if word in negative_weighted_lexicon.keys:
+            if word in negative_weighted_lexicon:
                 score = score - negative_weighted_lexicon[word]
                 wc += abs(negative_weighted_lexicon[word])
     return round(((score)/wc) * 5 + 5, 1)
@@ -299,6 +299,7 @@ def getData(link, name, university, option):
         return professor.return_summary()
     elif option == 2:
         # Weighted opinion lexicon
+        professor.homemade_rating = weightedOpinionLexicon(professor.comments)
         professor.sentiment_method = "Weighted Opinion Lexicon"
         return professor.return_summary()
     elif option == 3:
@@ -378,7 +379,7 @@ with open("negative-words.txt") as f:
     for line in f:
         k = line.strip().split(" ")
         negative_lexicon.append(k[0])
-        if len(k) > 1:
+        if len(k) > 1: 
             negative_weighted_lexicon[k[0]] = float(k[1])
         else:
             negative_weighted_lexicon[k[0]] = 1
